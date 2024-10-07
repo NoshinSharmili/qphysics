@@ -22,4 +22,16 @@ public class Motion {
         return initialVelocity + acceleration * time;
     }
 
+    /**
+     * Calculates the acceleration
+     * @param initialVelocity
+     * @param finalVelocity
+     * @param time
+     * @return acceleration in m/s^2
+     */
+    public static double acceleration(double initialVelocity, double finalVelocity, double time){
+        return (finalVelocity - initialVelocity)/time;
+    }
+
+
 }
