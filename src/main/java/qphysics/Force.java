@@ -1,5 +1,4 @@
 package qphysics;
-import java.lang.Math.*;
 
 public class Force {
 
