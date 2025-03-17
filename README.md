@@ -613,7 +613,9 @@ G = 6.67430e-11 N⋅m²/kg² <br>
 
 1.2 Speed of Light
 
-public static final double SPEED_OF_LIGHT Represents the speed of light in a vacuum:
+public static final double SPEED_OF_LIGHT 
+
+Represents the speed of light in a vacuum:
 
 1.3 Planck Constant
 
