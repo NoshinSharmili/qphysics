@@ -311,3 +311,144 @@ v2 = (1.0, 0.0, 0.0)
 Projection Vector = (3.0, 0.0, 0.0)  
 <br>  
 
+## Force Module  
+
+### 1. Newton's Second Law  
+
+**`1.1 double force(double mass, double acceleration)`** <br>  
+Calculates force using Newton's second law of motion.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+mass = 10.0 kg  
+acceleration = 5.0 m/s²  
+
+### Sample Output:  
+Force = 50.0 N  
+<br>  
+
+## 2. Gravitational Force  
+
+**`2.1 double gravitationalForce(double mass1, double mass2, double distance)`** <br>  
+Computes gravitational force between two objects using Newton's law of universal gravitation.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+mass1 = 5.97e24 kg (Earth’s mass)  
+mass2 = 7.35e22 kg (Moon’s mass)  
+distance = 3.84e8 m  
+
+### Sample Output:  
+Gravitational Force = 1.98e20 N  
+<br>  
+
+## 3. Frictional Force  
+
+**`3.1 double friction(double coefficientOfFriction, double normalForce)`** <br>  
+Calculates the force of friction using the friction equation.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+coefficientOfFriction = 0.5  
+normalForce = 100.0 N  
+
+### Sample Output:  
+Frictional Force = 50.0 N  
+<br>  
+
+## 4. Spring Force  
+
+**`4.1 double springForce(double springConstant, double displacement)`** <br>  
+Computes force exerted by a spring using Hooke's law.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+springConstant = 200.0 N/m  
+displacement = 0.1 m  
+
+### Sample Output:  
+Spring Force = -20.0 N  
+<br>  
+
+## 5. Centripetal Force  
+
+**`5.1 double centripetalForce(double mass, double velocity, double radius)`** <br>  
+Computes centripetal force for circular motion.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+mass = 2.0 kg  
+velocity = 4.0 m/s  
+radius = 2.0 m  
+
+### Sample Output:  
+Centripetal Force = 8.0 N  
+<br>  
+
+## 6. Electrostatic Force  
+
+**`6.1 double electrostaticForce(double charge1, double charge2, double distance)`** <br>  
+Computes the electrostatic force between two charged particles using Coulomb’s law.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+charge1 = 1.6e-19 C  
+charge2 = 1.6e-19 C  
+distance = 1.0e-10 m  
+
+### Sample Output:  
+Electrostatic Force = 2.3e-9 N  
+<br>  
+
+## 7. Drag Force  
+
+**`7.1 double dragForce(double dragCoefficient, double fluidDensity, double velocity, double crossSectionalArea)`** <br>  
+Calculates the resistive force experienced by an object moving through a fluid.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+dragCoefficient = 0.5  
+fluidDensity = 1.225 kg/m³  
+velocity = 10.0 m/s  
+crossSectionalArea = 1.0 m²  
+
+### Sample Output:  
+Drag Force = 61.25 N  
+<br>  
+
+## 8. Torque  
+
+**`8.1 double torque(double force, double distance)`** <br>  
+Computes the rotational effect of a force about a pivot.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+force = 10.0 N  
+distance = 2.0 m  
+
+### Sample Output:  
+Torque = 20.0 Nm  
+<br>  
+
+## 9. Net Force  
+
+**`9.1 double netForce(double[] forces)`** <br>  
+Computes the net force as the sum of multiple force vectors.  
+
+Time Complexity: O(n)  
+
+### Sample Input:  
+forces = {10.0, -5.0, 15.0, -10.0}  
+
+### Sample Output:  
+Net Force = 10.0 N  
+<br>  
+
