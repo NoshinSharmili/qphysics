@@ -629,7 +629,7 @@ h = 6.62607015e-34 J.s <br>
 
 ### 1.4 Elementary Charge
 
-**`public static final double`** 
+**`public static final double ELEMENTARY_CHARGE`** 
 
 ELEMENTARY_CHARGE Represents the charge of a single electron or proton:
 
@@ -637,24 +637,24 @@ e = 1.602176634e-19 C <br>
 
 ### 1.5 Avogadro Constant
 
-**`public static final double`** 
+**`public static final double AVOGADRO_CONSTANT`** 
 
-AVOGADRO_CONSTANT Defines Avogadro’s number, the number of particles in a mole:
+Defines Avogadro’s number, the number of particles in a mole:
 
 NA = 6.02214076e23 mol-1 <br>
 
 ### 1.6 Boltzmann Constant
 
-**`public static final double`** 
+**`public static final double BOLTZMANN_CONSTANT`** 
 
-BOLTZMANN_CONSTANT Relates temperature to energy in statistical mechanics:
+Relates temperature to energy in statistical mechanics:
 
 kB = 1.380649e-23 J/K <br>
 
 ### 1.7 Gas Constant
 
-**`public static final double`** 
+**`public static final double GAS_CONSTANT`** 
 
-GAS_CONSTANT Defines the universal gas constant:
+Defines the universal gas constant:
 
 R = 8.314 J/(mol.K) <br>
