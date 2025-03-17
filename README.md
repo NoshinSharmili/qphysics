@@ -181,3 +181,133 @@ angularAcceleration = 2.0
 
 Rotational Velocity = 11.0 rad/s  
 <br>
+
+## Vector Calculations Module  
+
+### 1. Vector Addition  
+
+**`1.1 Vector vectorAddition(Vector v1, Vector v2)`** <br>  
+Adds two vectors component-wise.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+
+v1 = (3.0, 4.0, 5.0)  
+v2 = (1.0, 2.0, 3.0)  
+
+### Sample Output:  
+Resultant Vector = (4.0, 6.0, 8.0)  
+<br>  
+
+**`1.2 Vector vectorAddition(Vector v1, Vector v2, Vector v3)`** <br>  
+Adds three vectors component-wise.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+
+v1 = (2.0, 3.0, 4.0)  
+v2 = (1.0, 1.0, 1.0)  
+v3 = (3.0, 2.0, 1.0)  
+
+### Sample Output:  
+Resultant Vector = (6.0, 6.0, 6.0)  
+<br>  
+
+## 2. Vector Subtraction  
+
+**`2.1 Vector vectorSubtraction(Vector v1, Vector v2)`** <br>  
+Subtracts `v2` from `v1` component-wise.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+
+v1 = (5.0, 6.0, 7.0)  
+v2 = (2.0, 3.0, 4.0)  
+
+### Sample Output:  
+Resultant Vector = (3.0, 3.0, 3.0)  
+<br>  
+
+## 3. Dot Product Calculation  
+
+**`3.1 double dotProduct(Vector v1, Vector v2)`** <br>  
+Computes the dot product of two vectors.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+
+v1 = (3.0, 4.0, 5.0)  
+v2 = (1.0, 2.0, 3.0)  
+
+### Sample Output:  
+Dot Product = 26.0  
+<br>  
+
+## 4. Cross Product Calculation  
+
+**`4.1 Vector crossProduct(Vector v1, Vector v2)`** <br>  
+Computes the cross product of two 3D vectors.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+
+v1 = (1.0, 2.0, 3.0)  
+v2 = (4.0, 5.0, 6.0)  
+
+### Sample Output:  
+Resultant Vector = (-3.0, 6.0, -3.0)  
+<br>  
+
+## 5. Angle Between Vectors  
+
+**`5.1 double angleBetweenVectors(Vector v1, Vector v2)`** <br>  
+Computes the angle between two vectors in radians.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+
+v1 = (1.0, 0.0, 0.0)  
+v2 = (0.0, 1.0, 0.0)  
+
+### Sample Output:  
+Angle = 1.5708 radians (90 degrees)  
+<br>  
+
+## 6. Scalar Multiplication  
+
+**`6.1 Vector scalarMultiplication(Vector v, double scalar)`** <br>  
+Multiplies a vector by a scalar.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+
+v = (2.0, 3.0, 4.0)  
+scalar = 2.0  
+
+### Sample Output:  
+Resultant Vector = (4.0, 6.0, 8.0)  
+<br>  
+
+## 7. Vector Projection  
+
+**`7.1 Vector projection(Vector v1, Vector v2)`** <br>  
+Projects `v1` onto `v2`.  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+
+v1 = (3.0, 4.0, 0.0)  
+v2 = (1.0, 0.0, 0.0)  
+
+### Sample Output:  
+Projection Vector = (3.0, 0.0, 0.0)  
+<br>  
+
