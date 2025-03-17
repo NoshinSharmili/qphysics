@@ -46,9 +46,9 @@ acceleration = 2.0
 
 ### Sample Output:
 Final Velocity = 20.0 m/s  
+<br>
 
 **`1.2 double finalVelocityUsingDisplacement(double initialVelocity, double displacement, double acceleration)`** <br>
-
 Computes the final velocity of an object using displacement instead of time, using the equation
 
 Time Complexity:O(1)
@@ -61,7 +61,8 @@ acceleration = 2.0
 
 ### Sample Output:
 
-Final Velocity = 10.0 m/s  
+Final Velocity = 10.0 m/s 
+<br>
 
 ## 2. Displacement Calculations
 **`2.1 double displacement(double initialVelocity, double time, double acceleration)`** <br>
@@ -79,6 +80,7 @@ acceleration = 2.0
 ### Sample Output:
 
 Displacement = 75.0 m  
+<br>
 
 **`2.2 double displacementUsingFinalVelocity(double initialVelocity, double finalVelocity, double acceleration)`** <br>
 Computes displacement based on initial velocity, final velocity, and acceleration 
@@ -94,6 +96,7 @@ acceleration = 2.0
 ### Sample Output:
 
 Displacement = 18.75 m  
+<br>
 
 ## 3. Acceleration Calculations
 **`3.1 double acceleration(double finalVelocity, double initialVelocity, double time)`**
@@ -109,9 +112,9 @@ time = 4.0
 ### Sample Output:
 
 Acceleration = 5.0 m/s²  
+<br>
 
 **`3.2 double accelerationUsingDisplacement(double displacement, double initialVelocity, double time)`**
-
 Computes acceleration using displacement instead of final velocity
 
 Time Complexity:O(1)
@@ -124,7 +127,9 @@ time = 10.0
 
 ### Sample Output:
 
-Acceleration = 0.5 m/s²  
+Acceleration = 0.5 m/s² 
+<br>
+
 ## 4. Time Calculation
 **`4.1 double time(double initialVelocity, double finalVelocity, double acceleration)`**
 
@@ -141,6 +146,7 @@ acceleration = 4.0
 ### Sample Output:
 
 Time = 5.0 s  
+<br>
 
 ## 5. Average Velocity Calculation
 **`5.1 double averageVelocity(double initialVelocity, double finalVelocity)`**
@@ -155,7 +161,8 @@ finalVelocity = 20.0,
 
 ### Sample Output:
 
-Average Velocity = 15.0 m/s  
+Average Velocity = 15.0 m/s 
+<br>
 
 ## 6. Rotational Velocity Calculation
 **`6.1 double rotationalVelocity(double angularVelocity, double time, double angularAcceleration)`**
@@ -173,3 +180,4 @@ angularAcceleration = 2.0
 ### Sample Output:
 
 Rotational Velocity = 11.0 rad/s  
+<br>
