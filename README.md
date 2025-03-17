@@ -311,7 +311,7 @@ v2 = (1.0, 0.0, 0.0)
 Projection Vector = (3.0, 0.0, 0.0)  
 <br>  
 
-## Force Module  
+## Force Calculations Module
 
 ### 1. Newton's Second Law  
 
@@ -452,7 +452,7 @@ forces = {10.0, -5.0, 15.0, -10.0}
 Net Force = 10.0 N  
 <br>  
 
-## Energy Module  
+## Energy Calculations Module 
 
 ### 1. Kinetic Energy  
 
