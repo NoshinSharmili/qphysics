@@ -64,7 +64,7 @@ acceleration = 2.0
 Final Velocity = 10.0 m/s 
 <br>
 
-## 2. Displacement Calculations
+### 2. Displacement Calculations
 **`2.1 double displacement(double initialVelocity, double time, double acceleration)`** <br>
 
 Calculates displacement using the kinematic equation
@@ -98,7 +98,7 @@ acceleration = 2.0
 Displacement = 18.75 m  
 <br>
 
-## 3. Acceleration Calculations
+### 3. Acceleration Calculations
 **`3.1 double acceleration(double finalVelocity, double initialVelocity, double time)`**
 Computes acceleration using the formula
 
@@ -130,7 +130,7 @@ time = 10.0
 Acceleration = 0.5 m/s² 
 <br>
 
-## 4. Time Calculation
+### 4. Time Calculation
 **`4.1 double time(double initialVelocity, double finalVelocity, double acceleration)`**
 
 Computes the time taken for an object to reach a final velocity under constant acceleration:
@@ -148,7 +148,7 @@ acceleration = 4.0
 Time = 5.0 s  
 <br>
 
-## 5. Average Velocity Calculation
+### 5. Average Velocity Calculation
 **`5.1 double averageVelocity(double initialVelocity, double finalVelocity)`**
 
 Computes the average velocity over the motion duration using:
@@ -164,7 +164,7 @@ finalVelocity = 20.0,
 Average Velocity = 15.0 m/s 
 <br>
 
-## 6. Rotational Velocity Calculation
+### 6. Rotational Velocity Calculation
 **`6.1 double rotationalVelocity(double angularVelocity, double time, double angularAcceleration)`**
 
 Computes rotational velocity using the equation
@@ -215,7 +215,7 @@ v3 = (3.0, 2.0, 1.0)
 Resultant Vector = (6.0, 6.0, 6.0)  
 <br>  
 
-## 2. Vector Subtraction  
+### 2. Vector Subtraction  
 
 **`2.1 Vector vectorSubtraction(Vector v1, Vector v2)`** <br>  
 Subtracts `v2` from `v1` component-wise.  
@@ -231,7 +231,7 @@ v2 = (2.0, 3.0, 4.0)
 Resultant Vector = (3.0, 3.0, 3.0)  
 <br>  
 
-## 3. Dot Product Calculation  
+### 3. Dot Product Calculation  
 
 **`3.1 double dotProduct(Vector v1, Vector v2)`** <br>  
 Computes the dot product of two vectors.  
@@ -247,7 +247,7 @@ v2 = (1.0, 2.0, 3.0)
 Dot Product = 26.0  
 <br>  
 
-## 4. Cross Product Calculation  
+### 4. Cross Product Calculation  
 
 **`4.1 Vector crossProduct(Vector v1, Vector v2)`** <br>  
 Computes the cross product of two 3D vectors.  
@@ -263,7 +263,7 @@ v2 = (4.0, 5.0, 6.0)
 Resultant Vector = (-3.0, 6.0, -3.0)  
 <br>  
 
-## 5. Angle Between Vectors  
+### 5. Angle Between Vectors  
 
 **`5.1 double angleBetweenVectors(Vector v1, Vector v2)`** <br>  
 Computes the angle between two vectors in radians.  
@@ -279,7 +279,7 @@ v2 = (0.0, 1.0, 0.0)
 Angle = 1.5708 radians (90 degrees)  
 <br>  
 
-## 6. Scalar Multiplication  
+### 6. Scalar Multiplication  
 
 **`6.1 Vector scalarMultiplication(Vector v, double scalar)`** <br>  
 Multiplies a vector by a scalar.  
@@ -295,7 +295,7 @@ scalar = 2.0
 Resultant Vector = (4.0, 6.0, 8.0)  
 <br>  
 
-## 7. Vector Projection  
+### 7. Vector Projection  
 
 **`7.1 Vector projection(Vector v1, Vector v2)`** <br>  
 Projects `v1` onto `v2`.  
@@ -328,7 +328,7 @@ acceleration = 5.0 m/s²
 Force = 50.0 N  
 <br>  
 
-## 2. Gravitational Force  
+### 2. Gravitational Force  
 
 **`2.1 double gravitationalForce(double mass1, double mass2, double distance)`** <br>  
 Computes gravitational force between two objects using Newton's law of universal gravitation.  
@@ -344,7 +344,7 @@ distance = 3.84e8 m
 Gravitational Force = 1.98e20 N  
 <br>  
 
-## 3. Frictional Force  
+### 3. Frictional Force  
 
 **`3.1 double friction(double coefficientOfFriction, double normalForce)`** <br>  
 Calculates the force of friction using the friction equation.  
@@ -359,7 +359,7 @@ normalForce = 100.0 N
 Frictional Force = 50.0 N  
 <br>  
 
-## 4. Spring Force  
+### 4. Spring Force  
 
 **`4.1 double springForce(double springConstant, double displacement)`** <br>  
 Computes force exerted by a spring using Hooke's law.  
@@ -374,7 +374,7 @@ displacement = 0.1 m
 Spring Force = -20.0 N  
 <br>  
 
-## 5. Centripetal Force  
+### 5. Centripetal Force  
 
 **`5.1 double centripetalForce(double mass, double velocity, double radius)`** <br>  
 Computes centripetal force for circular motion.  
@@ -390,7 +390,7 @@ radius = 2.0 m
 Centripetal Force = 8.0 N  
 <br>  
 
-## 6. Electrostatic Force  
+### 6. Electrostatic Force  
 
 **`6.1 double electrostaticForce(double charge1, double charge2, double distance)`** <br>  
 Computes the electrostatic force between two charged particles using Coulomb’s law.  
@@ -406,7 +406,7 @@ distance = 1.0e-10 m
 Electrostatic Force = 2.3e-9 N  
 <br>  
 
-## 7. Drag Force  
+### 7. Drag Force  
 
 **`7.1 double dragForce(double dragCoefficient, double fluidDensity, double velocity, double crossSectionalArea)`** <br>  
 Calculates the resistive force experienced by an object moving through a fluid.  
@@ -423,7 +423,7 @@ crossSectionalArea = 1.0 m²
 Drag Force = 61.25 N  
 <br>  
 
-## 8. Torque  
+### 8. Torque  
 
 **`8.1 double torque(double force, double distance)`** <br>  
 Computes the rotational effect of a force about a pivot.  
@@ -438,7 +438,7 @@ distance = 2.0 m
 Torque = 20.0 Nm  
 <br>  
 
-## 9. Net Force  
+### 9. Net Force  
 
 **`9.1 double netForce(double[] forces)`** <br>  
 Computes the net force as the sum of multiple force vectors.  
@@ -472,7 +472,7 @@ velocity = 3.0 m/s
 Kinetic Energy = 9.0 J  
 <br>  
 
-## 2. Potential Energy  
+### 2. Potential Energy  
 
 **`2.1 double potentialEnergy(double mass, double height, double gravity)`** <br>  
 Computes gravitational potential energy using the formula:  
@@ -491,7 +491,7 @@ gravity = 9.81 m/s²
 Potential Energy = 490.5 J  
 <br>  
 
-## 3. Gravitational Potential Energy  
+### 3. Gravitational Potential Energy  
 
 **`3.1 double gravitationalPotentialEnergy(double mass1, double mass2, double distance)`** <br>  
 Computes gravitational potential energy using the universal gravitation formula:  
@@ -510,7 +510,7 @@ distance = 3.84e8 m
 Gravitational Potential Energy ≈ -4.1e28 J  
 <br>  
 
-## 4. Elastic Potential Energy  
+### 4. Elastic Potential Energy  
 
 **`4.1 double elasticPotentialEnergy(double springConstant, double displacement)`** <br>  
 Computes elastic potential energy using Hooke’s law:  
@@ -528,7 +528,7 @@ displacement = 0.1 m
 Elastic Potential Energy = 1.0 J  
 <br>  
 
-## 5. Work Done  
+### 5. Work Done  
 
 **`5.1 double workDone(double force, double displacement, double angle)`** <br>  
 Computes work done using the equation:  
@@ -547,7 +547,7 @@ angle = 30°
 Work Done ≈ 43.3 J  
 <br>  
 
-## 6. Power  
+### 6. Power  
 
 **`6.1 double power(double workDone, double time)`** <br>  
 Computes power using the equation:  
@@ -565,7 +565,7 @@ time = 5.0 s
 Power = 20.0 W  
 <br>  
 
-## 7. Power Using Force and Velocity  
+### 7. Power Using Force and Velocity  
 
 **`7.1 double powerUsingForce(double force, double velocity)`** <br>  
 Computes power using force and velocity:  
@@ -583,7 +583,7 @@ velocity = 2.0 m/s
 Power = 100.0 W  
 <br>  
 
-## 8. Mechanical Energy  
+### 8. Mechanical Energy  
 
 **`8.1 double mechanicalEnergy(double kineticEnergy, double potentialEnergy)`** <br>  
 Computes total mechanical energy as:  
