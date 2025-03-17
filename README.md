@@ -7,7 +7,7 @@ qphysics is a modular and comprehensive Java-based physics library designed for 
 
 
 ## Team Description
-1.Noshin Sharmili
+1.[Noshin Sharmili](https://github.com/NoshinSharmili)
 
 2.Noor-E-Fatiha
 
