@@ -9,7 +9,7 @@ qphysics is a modular and comprehensive Java-based physics library designed for 
 ## Team Description
 1.[Noshin Sharmili](https://github.com/NoshinSharmili)
 
-2.Noor-E-Fatiha
+2.[Noor-E-Fatiha](https://github.com/fatiha693)
 
 3.[Afridah Zarin Khan](https://github.com/AfridahKhan)
 
@@ -611,28 +611,34 @@ Represents Newton’s gravitational constant, used in the universal law of gravi
 
 G = 6.67430e-11 N⋅m²/kg² <br>
 
-1.2 Speed of Light
+### 1.2 Speed of Light
 
-public static final double SPEED_OF_LIGHT 
+**`public static final double SPEED_OF_LIGHT`** 
 
 Represents the speed of light in a vacuum:
 
-1.3 Planck Constant
+c = 2.99792458e8 m/s <br>
 
-public static final double PLANCK_CONSTANT Defines Planck’s constant, used in quantum mechanics:
+### 1.3 Planck Constant
 
-1.4 Elementary Charge
+**`public static final double PLANCK_CONSTANT Defines Planck’s constant`**
+
+used in quantum mechanics:
+
+h = 6.62607015e-34 J.s <br>
+
+### 1.4 Elementary Charge
 
 public static final double ELEMENTARY_CHARGE Represents the charge of a single electron or proton:
 
-1.5 Avogadro Constant
+### 1.5 Avogadro Constant
 
 public static final double AVOGADRO_CONSTANT Defines Avogadro’s number, the number of particles in a mole:
 
-1.6 Boltzmann Constant
+### 1.6 Boltzmann Constant
 
 public static final double BOLTZMANN_CONSTANT Relates temperature to energy in statistical mechanics:
 
-1.7 Gas Constant
+### 1.7 Gas Constant
 
 public static final double GAS_CONSTANT Defines the universal gas constant:
