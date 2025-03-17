@@ -26,7 +26,7 @@ Department of Computer Science and Engineering
 - [Motion Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#motion-calculations-module)
 - [Vector Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#vector-calculations-module)
 - [Force Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#force-calculations-module)
-- [Energy/Work Calculations Module] (#Energy/Work Calculations Module)
+- [Energy/Work Calculations Module] (https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#energy-calculations-module)
 - [Physics Constants Module] #Physics Constants Module)
 - [Conversion Module] (#Conversion Module)
 
@@ -450,5 +450,154 @@ forces = {10.0, -5.0, 15.0, -10.0}
 
 ### Sample Output:  
 Net Force = 10.0 N  
+<br>  
+
+## Energy Module  
+
+### 1. Kinetic Energy  
+
+**`1.1 double kineticEnergy(double mass, double velocity)`** <br>  
+Calculates kinetic energy using the formula:  
+\[
+KE = \frac{1}{2} m v^2
+\]  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+mass = 2.0 kg  
+velocity = 3.0 m/s  
+
+### Sample Output:  
+Kinetic Energy = 9.0 J  
+<br>  
+
+## 2. Potential Energy  
+
+**`2.1 double potentialEnergy(double mass, double height, double gravity)`** <br>  
+Computes gravitational potential energy using the formula:  
+\[
+PE = mgh
+\]  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+mass = 5.0 kg  
+height = 10.0 m  
+gravity = 9.81 m/s²  
+
+### Sample Output:  
+Potential Energy = 490.5 J  
+<br>  
+
+## 3. Gravitational Potential Energy  
+
+**`3.1 double gravitationalPotentialEnergy(double mass1, double mass2, double distance)`** <br>  
+Computes gravitational potential energy using the universal gravitation formula:  
+\[
+U = - \frac{G m_1 m_2}{r}
+\]  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+mass1 = 5.97e24 kg (Earth’s mass)  
+mass2 = 7.35e22 kg (Moon’s mass)  
+distance = 3.84e8 m  
+
+### Sample Output:  
+Gravitational Potential Energy ≈ -4.1e28 J  
+<br>  
+
+## 4. Elastic Potential Energy  
+
+**`4.1 double elasticPotentialEnergy(double springConstant, double displacement)`** <br>  
+Computes elastic potential energy using Hooke’s law:  
+\[
+U = \frac{1}{2} k x^2
+\]  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+springConstant = 200.0 N/m  
+displacement = 0.1 m  
+
+### Sample Output:  
+Elastic Potential Energy = 1.0 J  
+<br>  
+
+## 5. Work Done  
+
+**`5.1 double workDone(double force, double displacement, double angle)`** <br>  
+Computes work done using the equation:  
+\[
+W = F d \cos(\theta)
+\]  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+force = 10.0 N  
+displacement = 5.0 m  
+angle = 30°  
+
+### Sample Output:  
+Work Done ≈ 43.3 J  
+<br>  
+
+## 6. Power  
+
+**`6.1 double power(double workDone, double time)`** <br>  
+Computes power using the equation:  
+\[
+P = \frac{W}{t}
+\]  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+workDone = 100.0 J  
+time = 5.0 s  
+
+### Sample Output:  
+Power = 20.0 W  
+<br>  
+
+## 7. Power Using Force and Velocity  
+
+**`7.1 double powerUsingForce(double force, double velocity)`** <br>  
+Computes power using force and velocity:  
+\[
+P = F v
+\]  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+force = 50.0 N  
+velocity = 2.0 m/s  
+
+### Sample Output:  
+Power = 100.0 W  
+<br>  
+
+## 8. Mechanical Energy  
+
+**`8.1 double mechanicalEnergy(double kineticEnergy, double potentialEnergy)`** <br>  
+Computes total mechanical energy as:  
+\[
+E = KE + PE
+\]  
+
+Time Complexity: O(1)  
+
+### Sample Input:  
+kineticEnergy = 100.0 J  
+potentialEnergy = 200.0 J  
+
+### Sample Output:  
+Mechanical Energy = 300.0 J  
 <br>  
 
