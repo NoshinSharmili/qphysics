@@ -33,7 +33,7 @@ Department of Computer Science and Engineering
 ## Motion Calculations Module
 ### 1.Final Velocity Calculations
 
-**`1.1double finalVelocity(double initialVelocity, double time, double acceleration)`** <br>
+**`1.1 double finalVelocity(double initialVelocity, double time, double acceleration)`** <br>
 Calculates the final velocity of an object given its initial velocity, time, and acceleration using the kinematic equation
 
 Time Complexity: 0(1)
