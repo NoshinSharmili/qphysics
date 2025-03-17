@@ -658,3 +658,53 @@ kB = 1.380649e-23 J/K <br>
 Defines the universal gas constant:
 
 R = 8.314 J/(mol.K) <br>
+
+### 2. Earth-Specific Constants
+
+### 2.1 Acceleration Due to Gravity
+
+**`public static final double ACCELERATION_DUE_TO_GRAVITY`**
+
+Represents the standard acceleration due to gravity on Earth:
+
+g = 9.8065 m/s^2 <br>
+
+### 2.2 Earth Mass
+
+**`public static final double EARTH_MASS`**
+
+Defines the mass of the Earth:
+
+ME = 5.92e24 kg <br>
+
+### 2.3 Earth Radius
+
+**`public static final double EARTH_RADIUS`**
+
+Represents the mean radius of the Earth:
+
+RE = 6.371e6 m <br>
+
+### 3. Electromagnetic Constants
+
+### 3.1 Permittivity of Free Space
+
+**`public static final double PERMITTIVITY_OF_FREE_SPACE`**
+
+Represents the permittivity of free space (vacuum permittivity):
+
+
+### 3.2 Permeability of Free Space
+
+**`public static final double PERMEABILITY_OF_FREE_SPACE`**
+
+Defines the permeability of free space (vacuum permeability):
+
+
+
+### 3.3 Stefan-Boltzmann Constant
+
+**`public static final double STEFAN_BOLTZMANN_CONSTANT`**
+
+Defines the Stefan-Boltzmann constant, used in blackbody radiation calculations:
+
