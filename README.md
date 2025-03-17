@@ -24,7 +24,7 @@ Department of Computer Science and Engineering
 ## Features
 
 - [Motion Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#motion-calculations-module)
-- [Vector Calculations Module] (#Vector Calculations Module)
+- [Vector Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#vector-calculations-module))
 - [Force Calculations Module] (#Force Calculations Module)
 - [Energy/Work Calculations Module] (#Energy/Work Calculations Module)
 - [Physics Constants Module] #Physics Constants Module)
