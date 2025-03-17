@@ -11,7 +11,7 @@ qphysics is a modular and comprehensive Java-based physics library designed for 
 
 2.Noor-E-Fatiha
 
-3.Afridah Zarin Khan
+3.[Afridah Zarin Khan](https://github.com/AfridahKhan)
 
 ## Supervised by
 
