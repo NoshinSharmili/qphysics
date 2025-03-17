@@ -36,7 +36,7 @@ Department of Computer Science and Engineering
 **`1.1double finalVelocity(double initialVelocity, double time, double acceleration)`** <br>
 Calculates the final velocity of an object given its initial velocity, time, and acceleration using the kinematic equation
 
-Time Complexity: 𝑂(1)
+Time Complexity: 0(1)
 
 ### Sample Input:
 
@@ -47,7 +47,7 @@ acceleration = 2.0
 ### Sample Output:
 Final Velocity = 20.0 m/s  
 
-### 1.2 double finalVelocityUsingDisplacement(double initialVelocity, double displacement, double acceleration)
+**`1.2 double finalVelocityUsingDisplacement(double initialVelocity, double displacement, double acceleration)`** <br>
 
 Computes the final velocity of an object using displacement instead of time, using the equation
 
@@ -56,9 +56,7 @@ Time Complexity:O(1)
 ### Sample Input:
 
 initialVelocity = 5.0,  
-
 displacement = 20.0, 
-
 acceleration = 2.0  
 
 ### Sample Output:
@@ -66,7 +64,7 @@ acceleration = 2.0
 Final Velocity = 10.0 m/s  
 
 ## 2. Displacement Calculations
-### 2.1 double displacement(double initialVelocity, double time, double acceleration)
+**`2.1 double displacement(double initialVelocity, double time, double acceleration)`** <br>
 
 Calculates displacement using the kinematic equation
 
@@ -82,7 +80,7 @@ acceleration = 2.0
 
 Displacement = 75.0 m  
 
-### 2.2 double displacementUsingFinalVelocity(double initialVelocity, double finalVelocity, double acceleration)
+**`2.2 double displacementUsingFinalVelocity(double initialVelocity, double finalVelocity, double acceleration)`** <br>
 Computes displacement based on initial velocity, final velocity, and acceleration 
 
 Time Complexity:O(1)
@@ -98,7 +96,7 @@ acceleration = 2.0
 Displacement = 18.75 m  
 
 ## 3. Acceleration Calculations
-### 3.1 double acceleration(double finalVelocity, double initialVelocity, double time)
+**`3.1 double acceleration(double finalVelocity, double initialVelocity, double time)`**
 Computes acceleration using the formula
 
 Time Complexity:O(1)
@@ -112,7 +110,7 @@ time = 4.0
 
 Acceleration = 5.0 m/s²  
 
-### 3.2 double accelerationUsingDisplacement(double displacement, double initialVelocity, double time)
+**`3.2 double accelerationUsingDisplacement(double displacement, double initialVelocity, double time)`**
 
 Computes acceleration using displacement instead of final velocity
 
@@ -128,7 +126,7 @@ time = 10.0
 
 Acceleration = 0.5 m/s²  
 ## 4. Time Calculation
-### 4.1 double time(double initialVelocity, double finalVelocity, double acceleration)
+**`4.1 double time(double initialVelocity, double finalVelocity, double acceleration)`**
 
 Computes the time taken for an object to reach a final velocity under constant acceleration:
 
@@ -145,7 +143,7 @@ acceleration = 4.0
 Time = 5.0 s  
 
 ## 5. Average Velocity Calculation
-### 5.1 double averageVelocity(double initialVelocity, double finalVelocity)
+**`5.1 double averageVelocity(double initialVelocity, double finalVelocity)`**
 
 Computes the average velocity over the motion duration using:
 
@@ -160,7 +158,7 @@ finalVelocity = 20.0,
 Average Velocity = 15.0 m/s  
 
 ## 6. Rotational Velocity Calculation
-### 6.1 double rotationalVelocity(double angularVelocity, double time, double angularAcceleration)
+**`6.1 double rotationalVelocity(double angularVelocity, double time, double angularAcceleration)`**
 
 Computes rotational velocity using the equation
 
