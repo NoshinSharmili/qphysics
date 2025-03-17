@@ -601,3 +601,34 @@ potentialEnergy = 200.0 J
 Mechanical Energy = 300.0 J  
 <br>  
 
+## Physics Constant Module
+###1. Universal Constants
+
+*1.1 Gravitational Constant*
+**`public static final double GRAVITATIONAL_CONSTANT`**
+Represents Newton’s gravitational constant, used in the universal law of gravitation:
+G = 6.67430e-11; // N⋅m²/kg² <br>
+
+1.2 Speed of Light
+
+public static final double SPEED_OF_LIGHT Represents the speed of light in a vacuum:
+
+1.3 Planck Constant
+
+public static final double PLANCK_CONSTANT Defines Planck’s constant, used in quantum mechanics:
+
+1.4 Elementary Charge
+
+public static final double ELEMENTARY_CHARGE Represents the charge of a single electron or proton:
+
+1.5 Avogadro Constant
+
+public static final double AVOGADRO_CONSTANT Defines Avogadro’s number, the number of particles in a mole:
+
+1.6 Boltzmann Constant
+
+public static final double BOLTZMANN_CONSTANT Relates temperature to energy in statistical mechanics:
+
+1.7 Gas Constant
+
+public static final double GAS_CONSTANT Defines the universal gas constant:
