@@ -608,6 +608,7 @@ Mechanical Energy = 300.0 J
 **`public static final double GRAVITATIONAL_CONSTANT`**
 
 Represents Newton’s gravitational constant, used in the universal law of gravitation:
+
 G = 6.67430e-11; // N⋅m²/kg² <br>
 
 1.2 Speed of Light
