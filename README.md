@@ -604,8 +604,9 @@ Mechanical Energy = 300.0 J
 ## Physics Constant Module
 ### 1.Universal Constants
 
-###1.1 Gravitational Constant
+### 1.1 Gravitational Constant
 **`public static final double GRAVITATIONAL_CONSTANT`**
+
 Represents Newton’s gravitational constant, used in the universal law of gravitation:
 G = 6.67430e-11; // N⋅m²/kg² <br>
 
