@@ -1141,7 +1141,7 @@ Maximum Height = 34.39 m
 
 ### 3. Total Range
 
-### 3.1 double totalRange(double velocity, double angle)
+**`3.1 double totalRange(double velocity, double angle)`**
 
 Calculates the horizontal distance traveled by the projectile using the formula:
 
