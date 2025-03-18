@@ -60,7 +60,7 @@ acceleration = 2.0
 ### Sample Output:
 Final Velocity = 20.0 m/s  
 <br>
-
+***
 **`1.2 double finalVelocityUsingDisplacement(double initialVelocity, double displacement, double acceleration)`** <br>
 
 Computes the final velocity of an object using displacement instead of time, using the equation:
@@ -79,7 +79,7 @@ acceleration = 2.0
 
 Final Velocity = 10.0 m/s  
 <br>
-
+***
 ### 2. Displacement Calculations
 **`2.1 double displacement(double initialVelocity, double time, double acceleration)`** <br>
 
@@ -99,7 +99,7 @@ acceleration = 2.0
 
 Displacement = 75.0 m  
 <br>
-
+***
 **`2.2 double displacementUsingFinalVelocity(double initialVelocity, double finalVelocity, double acceleration)`** <br>
 
 Computes displacement based on initial velocity, final velocity, and acceleration:
@@ -118,7 +118,7 @@ acceleration = 2.0
 
 Displacement = 18.75 m  
 <br>
-
+***
 ### 3. Acceleration Calculations
 **`3.1 double acceleration(double finalVelocity, double initialVelocity, double time)`**
 
@@ -137,7 +137,7 @@ time = 4.0
 
 Acceleration = 5.0 m/s²  
 <br>
-
+***
 **`3.2 double accelerationUsingDisplacement(double displacement, double initialVelocity, double time)`**
 
 Computes acceleration using displacement instead of final velocity:
@@ -156,7 +156,7 @@ time = 10.0
 
 Acceleration = 0.5 m/s²  
 <br>
-
+***
 ### 4. Time Calculation
 **`4.1 double time(double initialVelocity, double finalVelocity, double acceleration)`**
 
@@ -176,7 +176,7 @@ acceleration = 4.0
 
 Time = 5.0 s  
 <br>
-
+***
 ### 5. Average Velocity Calculation
 **`5.1 double averageVelocity(double initialVelocity, double finalVelocity)`**
 
@@ -194,7 +194,7 @@ finalVelocity = 20.0,
 
 Average Velocity = 15.0 m/s  
 <br>
-
+***
 ### 6. Rotational Velocity Calculation
 **`6.1 double rotationalVelocity(double angularVelocity, double time, double angularAcceleration)`**
 
@@ -214,7 +214,7 @@ angularAcceleration = 2.0
 
 Rotational Velocity = 11.0 rad/s  
 <br>
-
+***
 
 ## Vector Calculations Module  
 
@@ -233,7 +233,7 @@ v2 = (1.0, 2.0, 3.0)
 ### Sample Output:  
 Resultant Vector = (4.0, 6.0, 8.0)  
 <br>  
-
+***
 **`1.2 Vector vectorAddition(Vector v1, Vector v2, Vector v3)`** <br>  
 Adds three vectors component-wise.  
 
@@ -248,7 +248,7 @@ v3 = (3.0, 2.0, 1.0)
 ### Sample Output:  
 Resultant Vector = (6.0, 6.0, 6.0)  
 <br>  
-
+***
 ### 2. Vector Subtraction  
 
 **`2.1 Vector vectorSubtraction(Vector v1, Vector v2)`** <br>  
@@ -264,7 +264,7 @@ v2 = (2.0, 3.0, 4.0)
 ### Sample Output:  
 Resultant Vector = (3.0, 3.0, 3.0)  
 <br>  
-
+***
 ### 3. Dot Product Calculation  
 
 **`3.1 double dotProduct(Vector v1, Vector v2)`** <br>  
@@ -280,7 +280,7 @@ v2 = (1.0, 2.0, 3.0)
 ### Sample Output:  
 Dot Product = 26.0  
 <br>  
-
+***
 ### 4. Cross Product Calculation  
 
 **`4.1 Vector crossProduct(Vector v1, Vector v2)`** <br>  
@@ -296,7 +296,7 @@ v2 = (4.0, 5.0, 6.0)
 ### Sample Output:  
 Resultant Vector = (-3.0, 6.0, -3.0)  
 <br>  
-
+***
 ### 5. Angle Between Vectors  
 
 **`5.1 double angleBetweenVectors(Vector v1, Vector v2)`** <br>  
@@ -312,7 +312,7 @@ v2 = (0.0, 1.0, 0.0)
 ### Sample Output:  
 Angle = 1.5708 radians (90 degrees)  
 <br>  
-
+***
 ### 6. Scalar Multiplication  
 
 **`6.1 Vector scalarMultiplication(Vector v, double scalar)`** <br>  
@@ -328,7 +328,7 @@ scalar = 2.0
 ### Sample Output:  
 Resultant Vector = (4.0, 6.0, 8.0)  
 <br>  
-
+***
 ### 7. Vector Projection  
 
 **`7.1 Vector projection(Vector v1, Vector v2)`** <br>  
@@ -344,7 +344,7 @@ v2 = (1.0, 0.0, 0.0)
 ### Sample Output:  
 Projection Vector = (3.0, 0.0, 0.0)  
 <br>  
-
+***
 ## Force Calculations Module
 
 ### 1. Newton's Second Law  
@@ -361,7 +361,7 @@ acceleration = 5.0 m/s²
 ### Sample Output:  
 Force = 50.0 N  
 <br>  
-
+***
 ### 2. Gravitational Force  
 
 **`2.1 double gravitationalForce(double mass1, double mass2, double distance)`** <br>  
@@ -377,7 +377,7 @@ distance = 3.84e8 m
 ### Sample Output:  
 Gravitational Force = 1.98e20 N  
 <br>  
-
+***
 ### 3. Frictional Force  
 
 **`3.1 double friction(double coefficientOfFriction, double normalForce)`** <br>  
@@ -392,7 +392,7 @@ normalForce = 100.0 N
 ### Sample Output:  
 Frictional Force = 50.0 N  
 <br>  
-
+***
 ### 4. Spring Force  
 
 **`4.1 double springForce(double springConstant, double displacement)`** <br>  
@@ -407,7 +407,7 @@ displacement = 0.1 m
 ### Sample Output:  
 Spring Force = -20.0 N  
 <br>  
-
+***
 ### 5. Centripetal Force  
 
 **`5.1 double centripetalForce(double mass, double velocity, double radius)`** <br>  
@@ -423,7 +423,7 @@ radius = 2.0 m
 ### Sample Output:  
 Centripetal Force = 8.0 N  
 <br>  
-
+***
 ### 6. Electrostatic Force  
 
 **`6.1 double electrostaticForce(double charge1, double charge2, double distance)`** <br>  
@@ -439,7 +439,7 @@ distance = 1.0e-10 m
 ### Sample Output:  
 Electrostatic Force = 2.3e-9 N  
 <br>  
-
+***
 ### 7. Drag Force  
 
 **`7.1 double dragForce(double dragCoefficient, double fluidDensity, double velocity, double crossSectionalArea)`** <br>  
@@ -456,7 +456,7 @@ crossSectionalArea = 1.0 m²
 ### Sample Output:  
 Drag Force = 61.25 N  
 <br>  
-
+***
 ### 8. Torque  
 
 **`8.1 double torque(double force, double distance)`** <br>  
@@ -471,7 +471,7 @@ distance = 2.0 m
 ### Sample Output:  
 Torque = 20.0 Nm  
 <br>  
-
+***
 ### 9. Net Force  
 
 **`9.1 double netForce(double[] forces)`** <br>  
@@ -485,7 +485,7 @@ forces = {10.0, -5.0, 15.0, -10.0}
 ### Sample Output:  
 Net Force = 10.0 N  
 <br>  
-
+***
 
 ## Energy Calculations Module 
 
@@ -506,7 +506,7 @@ velocity = 3.0 m/s
 ### Sample Output:  
 Kinetic Energy = 9.0 J  
 <br>  
-
+***
 ### 2. Potential Energy  
 
 **`2.1 double potentialEnergy(double mass, double height, double gravity)`** <br>  
@@ -525,7 +525,7 @@ gravity = 9.81 m/s²
 ### Sample Output:  
 Potential Energy = 490.5 J  
 <br>  
-
+***
 ### 3. Gravitational Potential Energy  
 
 **`3.1 double gravitationalPotentialEnergy(double mass1, double mass2, double distance)`** <br>  
@@ -544,7 +544,7 @@ distance = 3.84e8 m
 ### Sample Output:  
 Gravitational Potential Energy ≈ -4.1e28 J  
 <br>  
-
+***
 ### 4. Elastic Potential Energy  
 
 **`4.1 double elasticPotentialEnergy(double springConstant, double displacement)`** <br>  
@@ -562,7 +562,7 @@ displacement = 0.1 m
 ### Sample Output:  
 Elastic Potential Energy = 1.0 J  
 <br>  
-
+***
 ### 5. Work Done  
 
 **`5.1 double workDone(double force, double displacement, double angle)`** <br>  
@@ -581,7 +581,7 @@ angle = 30°
 ### Sample Output:  
 Work Done ≈ 43.3 J  
 <br>  
-
+***
 ### 6. Power  
 
 **`6.1 double power(double workDone, double time)`** <br>  
@@ -599,7 +599,7 @@ time = 5.0 s
 ### Sample Output:  
 Power = 20.0 W  
 <br>  
-
+***
 ### 7. Power Using Force and Velocity  
 
 **`7.1 double powerUsingForce(double force, double velocity)`** <br>  
@@ -617,7 +617,7 @@ velocity = 2.0 m/s
 ### Sample Output:  
 Power = 100.0 W  
 <br>  
-
+***
 ### 8. Mechanical Energy  
 
 **`8.1 double mechanicalEnergy(double kineticEnergy, double potentialEnergy)`** <br>  
@@ -635,7 +635,7 @@ potentialEnergy = 200.0 J
 ### Sample Output:  
 Mechanical Energy = 300.0 J  
 <br>  
-
+***
 
 ## Physics Constants Module
 
@@ -647,7 +647,7 @@ Mechanical Energy = 300.0 J
 Represents Newton’s gravitational constant, used in the universal law of gravitation:
 
 G = 6.67430e-11 N⋅m²/kg² <br>
-
+***
 ### 1.2 Speed of Light
 
 **`public static final double SPEED_OF_LIGHT`** 
@@ -655,7 +655,7 @@ G = 6.67430e-11 N⋅m²/kg² <br>
 Represents the speed of light in a vacuum:
 
 c = 2.99792458e8 m/s <br>
-
+***
 ### 1.3 Planck Constant
 
 **`public static final double PLANCK_CONSTANT`** 
@@ -663,7 +663,7 @@ c = 2.99792458e8 m/s <br>
 Defines Planck’s constant used in quantum mechanics:
 
 h = 6.62607015e-34 J.s <br>
-
+***
 ### 1.4 Elementary Charge
 
 **`public static final double ELEMENTARY_CHARGE`** 
@@ -671,7 +671,7 @@ h = 6.62607015e-34 J.s <br>
 ELEMENTARY_CHARGE Represents the charge of a single electron or proton:
 
 e = 1.602176634e-19 C <br>
-
+***
 ### 1.5 Avogadro Constant
 
 **`public static final double AVOGADRO_CONSTANT`** 
@@ -679,7 +679,7 @@ e = 1.602176634e-19 C <br>
 Defines Avogadro’s number, the number of particles in a mole:
 
 NA = 6.02214076e23 mol-1 <br>
-
+***
 ### 1.6 Boltzmann Constant
 
 **`public static final double BOLTZMANN_CONSTANT`** 
@@ -687,7 +687,7 @@ NA = 6.02214076e23 mol-1 <br>
 Relates temperature to energy in statistical mechanics:
 
 kB = 1.380649e-23 J/K <br>
-
+***
 ### 1.7 Gas Constant
 
 **`public static final double GAS_CONSTANT`** 
@@ -695,7 +695,7 @@ kB = 1.380649e-23 J/K <br>
 Defines the universal gas constant:
 
 R = 8.314 J/(mol.K) <br>
-
+***
 ### 2. Earth-Specific Constants
 
 ### 2.1 Acceleration Due to Gravity
@@ -705,7 +705,7 @@ R = 8.314 J/(mol.K) <br>
 Represents the standard acceleration due to gravity on Earth:
 
 g = 9.8065 m/s^2 <br>
-
+***
 ### 2.2 Earth Mass
 
 **`public static final double EARTH_MASS`**
@@ -713,7 +713,7 @@ g = 9.8065 m/s^2 <br>
 Defines the mass of the Earth:
 
 Mₑ = 5.92e24 kg <br>
-
+***
 ### 2.3 Earth Radius
 
 **`public static final double EARTH_RADIUS`**
@@ -721,7 +721,7 @@ Mₑ = 5.92e24 kg <br>
 Represents the mean radius of the Earth:
 
 Rₑ = 6.371e6 m <br>
-
+***
 ### 3. Electromagnetic Constants
 
 ### 3.1 Permittivity of Free Space
@@ -731,7 +731,7 @@ Rₑ = 6.371e6 m <br>
 Represents the permittivity of free space (vacuum permittivity):
 
 ε₀ = 8.854187817 × 10⁻¹² F/m
-
+***
 ### 3.2 Permeability of Free Space
 
 **`public static final double PERMEABILITY_OF_FREE_SPACE`**
@@ -739,7 +739,7 @@ Represents the permittivity of free space (vacuum permittivity):
 Defines the permeability of free space (vacuum permeability):
 
 μ₀ = 4π × 10⁻⁷ N/A²
-
+***
 
 ### 3.3 Stefan-Boltzmann Constant
 
@@ -748,7 +748,7 @@ Defines the permeability of free space (vacuum permeability):
 Defines the Stefan-Boltzmann constant, used in blackbody radiation calculations:
 
 σ = 5.670374419 × 10⁻⁸ W⋅m⁻²⋅K⁻⁴
-
+***
 
 ## Conversion Module
 
@@ -766,7 +766,7 @@ meters = 5000.0
 Sample Output:
 Kilometers = 5.0 km
 <br>
-
+***
 **`1.2 double kilometersToMeters(double kilometers)`**
 
 Converts length from kilometers to meters using the formula:
@@ -783,7 +783,7 @@ kilometers = 3.5
 
 Meters = 3500.0 m
 <br>
-
+***
 **`1.3 double metersToMiles(double meters)`**
 
 Converts length from meters to miles using the formula:
@@ -800,7 +800,7 @@ meters = 1609.34
 
 Miles = 1.0 mi
 <br>
-
+***
 **`1.4 double milesToMeters(double miles)`**
 
 Converts length from miles to meters using the formula:
@@ -817,7 +817,7 @@ miles = 2.0
 
 Meters = 3218.68 m
 <br>
-
+***
 ### 2. Temperature Conversions
 
 **`2.1 double celsiusToFahrenheit(double celsius)`**
@@ -836,7 +836,7 @@ celsius = 25.0
 
 Fahrenheit = 77.0 °F
 <br>
-
+***
 **`2.2 double fahrenheitToCelsius(double fahrenheit)`**
 
 Converts temperature from Fahrenheit to Celsius using the formula:
@@ -853,7 +853,7 @@ fahrenheit = 98.6
 
 Celsius = 37.0 °C
 <br>
-
+***
 ### 3. Energy Conversions
 
 **`3.1 double joulesToCalories(double joules)`**
@@ -872,7 +872,7 @@ joules = 100.0
 
 Calories = 23.92 cal
 <br>
-
+***
 **`3.2 double caloriesToJoules(double calories)`**
 
 Converts energy from calories to joules using the formula:
@@ -889,7 +889,7 @@ calories = 50.0
 
 Joules = 209.2 J
 <br>
-
+***
 ### 4. Force Conversions
 
 **`4.1 double newtonsToPounds(double newtons)`**
@@ -908,7 +908,7 @@ newtons = 10.0
 
 Pounds-force = 2.24809 lbf
 <br>
-
+***
 **`4.2 double poundsToNewtons(double pounds)`**
 
 Converts force from pounds-force to newtons using the formula:
@@ -925,7 +925,7 @@ pounds = 5.0
 
 Newtons = 22.2413 N
 <br>
-
+***
 ### 5. Time Conversions
 
 **`5.1 double secondsToMinutes(double seconds)`**
@@ -944,7 +944,7 @@ seconds = 180.0
 
 Minutes = 3.0 min
 <br>
-
+***
 **`5.2 double minutesToSeconds(double minutes)`**
 
 Converts time from minutes to seconds using the formula:
@@ -961,7 +961,7 @@ minutes = 2.5
 
 Seconds = 150.0 s
 <br>
-
+***
 ### 6. Angle Conversions
 
 **`6.1 double degreesToRadians(double degrees)`**
@@ -980,7 +980,7 @@ degrees = 180.0
 
 Radians = 3.1416 rad
 <br>
-
+***
 **`6.2 double radiansToDegrees(double radians)`**
 
 Converts angle from radians to degrees using the formula:
@@ -997,7 +997,7 @@ radians = 1.57
 
 Degrees = 89.95°
 <br>
-
+***
 ### 7. Power Conversions
 
 **`7.1 double wattsToHorsePower(double watts)`**
@@ -1016,7 +1016,7 @@ watts = 1491.4
 
 Horsepower = 2.0 hp
 <br>
-
+***
 **`7.2 double horsePowerToWatts(double horsepower)`**
 
 Converts power from horsepower to watts using the formula:
@@ -1033,7 +1033,7 @@ horsepower = 3.0
 
 Watts = 2237.1 W
 <br>
-
+***
 ### 8. Volume Conversions
 
 **`8.1 double litersToGallons(double liters)`**
@@ -1052,7 +1052,7 @@ liters = 7.57
 
 Gallons = 2.0 gal
 <br>
-
+***
 **`8.2 double gallonsToLiters(double gallons)`**
 
 Converts volume from gallons to liters using the formula:
@@ -1069,7 +1069,7 @@ gallons = 5.0
 
 Liters = 18.93 L
 <br>
-
+***
 ### 9. Mass Conversions
 
 **`9.1 double kilogramsToPounds(double kilograms)`**
@@ -1089,7 +1089,7 @@ kilograms = 10.0
 Pounds = 22.0462 lb
 
 <br>
-
+***
 **`9.2 double poundsToKilograms(double pounds)`**
 
 Converts mass from pounds to kilograms using the formula:
@@ -1106,7 +1106,7 @@ pounds = 50.0
 
 Kilograms = 22.68 kg
 <br>
-
+***
 ## Projectile Motion Module
 
 ### 1. Time of Flight
@@ -1129,7 +1129,7 @@ velocity = 20.0 m/s, angle = 45.0°
 ### Sample Output:
 Time of Flight = 2.87 s
 <br>
-
+***
 ### 2. Maximum Height
 **`2.1 double maxHeight(double velocity, double angle)`**
 
@@ -1155,7 +1155,7 @@ velocity = 30.0 m/s, angle = 60.0°
 
 Maximum Height = 34.39 m
 <br>
-
+***
 ### 3. Total Range
 
 **`3.1 double totalRange(double velocity, double angle)`**
@@ -1181,7 +1181,7 @@ velocity = 25.0 m/s, angle = 30.0°
 ### Sample Output:
 
 Total Range = 55.06 m <br>
-
+***
 ### 4. Velocity at a Given Time
 
 **`4.1 double velocityAtTime(double velocity, double angle, double time)`**
@@ -1214,7 +1214,7 @@ velocity = 40.0 m/s, angle = 45.0°, time = 2.0 s
 ### Sample Output:
 Velocity at Time t = 34.18 m/s
 <br>
-
+***
 ### 5. Position at a Given Time
 
 **`5.1 double[] positionAtTime(double velocity, double angle, double time)`**
@@ -1245,4 +1245,4 @@ velocity = 50.0 m/s, angle = 30.0°, time = 3.0 s
 
 Position at Time t = (X: 129.9 m, Y: 30.3 m)
 <br>
-
+***
