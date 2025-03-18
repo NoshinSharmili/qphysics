@@ -601,7 +601,7 @@ potentialEnergy = 200.0 J
 Mechanical Energy = 300.0 J  
 <br>  
 
-## Physics Constant Module
+## Physics Constants Module
 ### 1.Universal Constants
 
 ### 1.1 Gravitational Constant
