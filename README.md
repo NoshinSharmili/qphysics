@@ -1118,8 +1118,7 @@ Time of Flight = 2.87 s
 
 Calculates the peak height reached by the projectile using the formula:
 
-H = V0^2 sin^2(θ)
-​
+H = V0^2​.sin^2(θ)/​2g
  
 where:
 
@@ -1132,57 +1131,39 @@ g is the acceleration due to gravity (9.8 m/s²)
 Time Complexity: O(1)
 
 ### Sample Input:
+
 velocity = 30.0 m/s, angle = 60.0°
 
 ### Sample Output:
+
 Maximum Height = 34.39 m
 <br>
 
-3. Total Range
-3.1 double totalRange(double velocity, double angle)
+### 3. Total Range
+
+### 3.1 double totalRange(double velocity, double angle)
+
 Calculates the horizontal distance traveled by the projectile using the formula:
 
-𝑅
-=
-𝑉
-0
-2
-sin
-⁡
-(
-2
-𝜃
-)
-𝑔
-R= 
-g
-V 
-0
-2
-​
- sin(2θ)
-​
- 
+R= V0^2​.sin(2θ)​/g
+
 where:
 
-𝑉
-0
-V 
-0
-​
-  is the initial velocity (m/s)
-𝜃
+V0 is the initial velocity (m/s)
+
 θ is the launch angle (degrees)
-𝑔
+
 g is the acceleration due to gravity (9.8 m/s²)
+
 Time Complexity: O(1)
 
-Sample Input:
+### Sample Input:
+
 velocity = 25.0 m/s, angle = 30.0°
 
-Sample Output:
-Total Range = 55.06 m
-<br>
+### Sample Output:
+
+Total Range = 55.06 m <br>
 
 ### 4. Velocity at a Given Time
 
