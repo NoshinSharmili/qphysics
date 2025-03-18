@@ -1269,72 +1269,33 @@ Sample Output:
 Velocity at Time t = 34.18 m/s
 <br>
 
-5. Position at a Given Time
-5.1 double[] positionAtTime(double velocity, double angle, double time)
+### 5. Position at a Given Time
+
+**`5.1 double[] positionAtTime(double velocity, double angle, double time)`**
+
 Calculates the x (horizontal) and y (vertical) positions at a given time using the formulas:
 
-𝑋
-=
-𝑉
-0
-cos
-⁡
-(
-𝜃
-)
-⋅
-𝑡
-X=V 
-0
-​
- cos(θ)⋅t
-𝑌
-=
-𝑉
-0
-sin
-⁡
-(
-𝜃
-)
-⋅
-𝑡
-−
-1
-2
-𝑔
-𝑡
-2
-Y=V 
-0
-​
- sin(θ)⋅t− 
-2
-1
-​
- gt 
-2
+X= V0 cos(θ)⋅t
+Y= V0 sin(θ)⋅t− 1/2 gt^2
  
 where:
 
-𝑉
-0
-V 
-0
-​
-  is the initial velocity (m/s)
-𝜃
+V0 is the initial velocity (m/s)
+
 θ is the launch angle (degrees)
-𝑔
+
 g is the acceleration due to gravity (9.8 m/s²)
-𝑡
+
 t is the elapsed time (s)
+
 Time Complexity: O(1)
 
-Sample Input:
+### Sample Input:
+
 velocity = 50.0 m/s, angle = 30.0°, time = 3.0 s
 
-Sample Output:
+### Sample Output:
+
 Position at Time t = (X: 129.9 m, Y: 30.3 m)
 <br>
 
