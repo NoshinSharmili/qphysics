@@ -28,7 +28,7 @@ Department of Computer Science and Engineering
 - [Force Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#force-calculations-module)
 - [Energy/Work Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#energy-calculations-module)
 - [Physics Constants Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#physics-constants-module)
-- [Conversion Module] (#Conversion Module)
+- [Conversion Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#conversion-module)
 
 ## Motion Calculations Module
 
@@ -744,7 +744,8 @@ Sample Output:
 Kilometers = 5.0 km
 <br>
 
-1.2 double kilometersToMeters(double kilometers)
+**`1.2 double kilometersToMeters(double kilometers)`**
+
 Converts length from kilometers to meters using the formula:
 
 m = km × 1000
@@ -752,13 +753,16 @@ m = km × 1000
 Time Complexity: O(1)
 
 ### Sample Input:
+
 kilometers = 3.5
 
 ### Sample Output:
+
 Meters = 3500.0 m
 <br>
 
 **`1.3 double metersToMiles(double meters)`**
+
 Converts length from meters to miles using the formula:
 
 mi = m / 1609.34
@@ -766,13 +770,16 @@ mi = m / 1609.34
 Time Complexity: O(1)
 
 ### Sample Input:
+
 meters = 1609.34
 
 ### Sample Output:
+
 Miles = 1.0 mi
 <br>
 
 **`1.4 double milesToMeters(double miles)`**
+
 Converts length from miles to meters using the formula:
 
 m = mi × 1609.34
@@ -780,14 +787,18 @@ m = mi × 1609.34
 Time Complexity: O(1)
 
 ### Sample Input:
+
 miles = 2.0
 
 ### Sample Output:
+
 Meters = 3218.68 m
 <br>
 
 ### 2. Temperature Conversions
+
 **`2.1 double celsiusToFahrenheit(double celsius)`**
+
 Converts temperature from Celsius to Fahrenheit using the formula:
 
 °F = (°C × 9/5) + 32
@@ -795,13 +806,16 @@ Converts temperature from Celsius to Fahrenheit using the formula:
 Time Complexity: O(1)
 
 ### Sample Input:
+
 celsius = 25.0
 
 ### Sample Output:
+
 Fahrenheit = 77.0 °F
 <br>
 
 **`2.2 double fahrenheitToCelsius(double fahrenheit)`**
+
 Converts temperature from Fahrenheit to Celsius using the formula:
 
 °C = (°F - 32) × 5/9
@@ -809,14 +823,18 @@ Converts temperature from Fahrenheit to Celsius using the formula:
 Time Complexity: O(1)
 
 ### Sample Input:
+
 fahrenheit = 98.6
 
 ### Sample Output:
+
 Celsius = 37.0 °C
 <br>
 
 ### 3. Energy Conversions
+
 **`3.1 double joulesToCalories(double joules)`**
+
 Converts energy from joules to calories using the formula:
 
 cal = J / 4.184
@@ -824,13 +842,16 @@ cal = J / 4.184
 Time Complexity: O(1)
 
 ### Sample Input:
+
 joules = 100.0
 
 ### Sample Output:
+
 Calories = 23.92 cal
 <br>
 
 **`3.2 double caloriesToJoules(double calories)`**
+
 Converts energy from calories to joules using the formula:
 
 J = cal × 4.184
@@ -838,14 +859,18 @@ J = cal × 4.184
 Time Complexity: O(1)
 
 ### Sample Input:
+
 calories = 50.0
 
 ### Sample Output:
+
 Joules = 209.2 J
 <br>
 
 ### 4. Force Conversions
+
 **`4.1 double newtonsToPounds(double newtons)`**
+
 Converts force from newtons to pounds-force using the formula:
 
 lbf = N × 0.224809
@@ -853,13 +878,16 @@ lbf = N × 0.224809
 Time Complexity: O(1)
 
 ### Sample Input:
+
 newtons = 10.0
 
 ### Sample Output:
+
 Pounds-force = 2.24809 lbf
 <br>
 
 **`4.2 double poundsToNewtons(double pounds)`**
+
 Converts force from pounds-force to newtons using the formula:
 
 N = lbf / 0.224809
@@ -867,14 +895,18 @@ N = lbf / 0.224809
 Time Complexity: O(1)
 
 ### Sample Input:
+
 pounds = 5.0
 
 ### Sample Output:
+
 Newtons = 22.2413 N
 <br>
 
 ### 5. Time Conversions
+
 **`5.1 double secondsToMinutes(double seconds)`**
+
 Converts time from seconds to minutes using the formula:
 
 min = s / 60
@@ -882,13 +914,16 @@ min = s / 60
 Time Complexity: O(1)
 
 ### Sample Input:
+
 seconds = 180.0
 
 ### Sample Output:
+
 Minutes = 3.0 min
 <br>
 
 **`5.2 double minutesToSeconds(double minutes)`**
+
 Converts time from minutes to seconds using the formula:
 
 s = min × 60
@@ -896,14 +931,18 @@ s = min × 60
 Time Complexity: O(1)
 
 ### Sample Input:
+
 minutes = 2.5
 
 ### Sample Output:
+
 Seconds = 150.0 s
 <br>
 
 ### 6. Angle Conversions
+
 **`6.1 double degreesToRadians(double degrees)`**
+
 Converts angle from degrees to radians using the formula:
 
 rad = degrees × (π / 180)
@@ -911,13 +950,16 @@ rad = degrees × (π / 180)
 Time Complexity: O(1)
 
 ### Sample Input:
+
 degrees = 180.0
 
 ### Sample Output:
+
 Radians = 3.1416 rad
 <br>
 
 **`6.2 double radiansToDegrees(double radians)`**
+
 Converts angle from radians to degrees using the formula:
 
 degrees = rad × (180 / π)
@@ -925,14 +967,18 @@ degrees = rad × (180 / π)
 Time Complexity: O(1)
 
 ### Sample Input:
+
 radians = 1.57
 
 ### Sample Output:
+
 Degrees = 89.95°
 <br>
 
 ### 7. Power Conversions
+
 **`7.1 double wattsToHorsePower(double watts)`**
+
 Converts power from watts to horsepower using the formula:
 
 hp = W / 745.7
@@ -940,13 +986,16 @@ hp = W / 745.7
 Time Complexity: O(1)
 
 ### Sample Input:
+
 watts = 1491.4
 
 ### Sample Output:
+
 Horsepower = 2.0 hp
 <br>
 
 **`7.2 double horsePowerToWatts(double horsepower)`**
+
 Converts power from horsepower to watts using the formula:
 
 W = hp × 745.7
@@ -954,14 +1003,18 @@ W = hp × 745.7
 Time Complexity: O(1)
 
 ### Sample Input:
+
 horsepower = 3.0
 
 ### Sample Output:
+
 Watts = 2237.1 W
 <br>
 
 ### 8. Volume Conversions
+
 **`8.1 double litersToGallons(double liters)`**
+
 Converts volume from liters to gallons using the formula:
 
 gal = L / 3.78541
@@ -969,13 +1022,16 @@ gal = L / 3.78541
 Time Complexity: O(1)
 
 ### Sample Input:
+
 liters = 7.57
 
 ### Sample Output:
+
 Gallons = 2.0 gal
 <br>
 
 **`8.2 double gallonsToLiters(double gallons)`**
+
 Converts volume from gallons to liters using the formula:
 
 L = gal × 3.78541
@@ -983,14 +1039,18 @@ L = gal × 3.78541
 Time Complexity: O(1)
 
 ### Sample Input:
+
 gallons = 5.0
 
 ### Sample Output:
+
 Liters = 18.93 L
 <br>
 
 ### 9. Mass Conversions
+
 **`9.1 double kilogramsToPounds(double kilograms)`**
+
 Converts mass from kilograms to pounds using the formula:
 
 lb = kg × 2.20462
@@ -998,12 +1058,17 @@ lb = kg × 2.20462
 Time Complexity: O(1)
 
 ### Sample Input:
+
 kilograms = 10.0
 
 ### Sample Output:
+
 Pounds = 22.0462 lb
+
 <br>
+
 **`9.2 double poundsToKilograms(double pounds)`**
+
 Converts mass from pounds to kilograms using the formula:
 
 kg = lb / 2.20462
@@ -1011,9 +1076,11 @@ kg = lb / 2.20462
 Time Complexity: O(1)
 
 ### Sample Input:
+
 pounds = 50.0
 
 ### Sample Output:
+
 Kilograms = 22.68 kg
 <br>
 
