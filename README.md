@@ -27,7 +27,7 @@ Department of Computer Science and Engineering
 - [Vector Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#vector-calculations-module)
 - [Force Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#force-calculations-module)
 - [Energy/Work Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#energy-calculations-module)
-- [Physics Constants Module] #Physics Constants Module)
+- [Physics Constants Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#physics-constants-module)
 - [Conversion Module] (#Conversion Module)
 
 ## Motion Calculations Module
