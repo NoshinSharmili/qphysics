@@ -1097,7 +1097,9 @@ Kilograms = 22.68 kg
 Calculates the total time the projectile remains in the air using the formula:
 
 𝑇=2𝑉0sin⁡(𝜃)/g
+
 ​where:
+
 V0 is the initial velocity (m/s) <br>
 θ is the launch angle (degrees)<br>
 g is the acceleration due to gravity (9.8 m/s²)<br>
@@ -1110,52 +1112,28 @@ velocity = 20.0 m/s, angle = 45.0°
 Time of Flight = 2.87 s
 <br>
 
-2. Maximum Height
-2.1 double maxHeight(double velocity, double angle)
+### 2. Maximum Height
+**`2.1 double maxHeight(double velocity, double angle)`**
+
 Calculates the peak height reached by the projectile using the formula:
 
-𝐻
-=
-𝑉
-0
-2
-sin
-⁡
-2
-(
-𝜃
-)
-2
-𝑔
-H= 
-2g
-V 
-0
-2
-​
- sin 
-2
- (θ)
+H = V0^2 sin^2(θ)
 ​
  
 where:
 
-𝑉
-0
-V 
-0
-​
-  is the initial velocity (m/s)
-𝜃
+V0 is the initial velocity (m/s)
+
 θ is the launch angle (degrees)
-𝑔
+
 g is the acceleration due to gravity (9.8 m/s²)
+
 Time Complexity: O(1)
 
-Sample Input:
+### Sample Input:
 velocity = 30.0 m/s, angle = 60.0°
 
-Sample Output:
+### Sample Output:
 Maximum Height = 34.39 m
 <br>
 
