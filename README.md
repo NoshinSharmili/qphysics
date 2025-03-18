@@ -31,16 +31,19 @@ Department of Computer Science and Engineering
 - [Conversion Module] (#Conversion Module)
 
 ## Motion Calculations Module
-### 1.Final Velocity Calculations
+
+### 1. Final Velocity Calculations
 
 **`1.1 double finalVelocity(double initialVelocity, double time, double acceleration)`** <br>
-Calculates the final velocity of an object given its initial velocity, time, and acceleration using the kinematic equation
+Calculates the final velocity of an object given its initial velocity, time, and acceleration using the kinematic equation:
 
-Time Complexity: 0(1)
+**v = u + at**  
+
+Time Complexity: O(1)
 
 ### Sample Input:
 
-initialVelocity = 10.0,
+initialVelocity = 10.0,  
 time = 5.0,  
 acceleration = 2.0  
 
@@ -49,31 +52,34 @@ Final Velocity = 20.0 m/s
 <br>
 
 **`1.2 double finalVelocityUsingDisplacement(double initialVelocity, double displacement, double acceleration)`** <br>
-Computes the final velocity of an object using displacement instead of time, using the equation
+Computes the final velocity of an object using displacement instead of time, using the equation:
 
-Time Complexity:O(1)
+**v² = u² + 2as**  
+
+Time Complexity: O(1)
 
 ### Sample Input:
 
 initialVelocity = 5.0,  
-displacement = 20.0, 
+displacement = 20.0,  
 acceleration = 2.0  
 
 ### Sample Output:
 
-Final Velocity = 10.0 m/s 
+Final Velocity = 10.0 m/s  
 <br>
 
 ### 2. Displacement Calculations
 **`2.1 double displacement(double initialVelocity, double time, double acceleration)`** <br>
+Calculates displacement using the kinematic equation:
 
-Calculates displacement using the kinematic equation
+**s = ut + (1/2)at²**  
 
-​Time Complexity:O(1)
+Time Complexity: O(1)
 
 ### Sample Input:
 
-initialVelocity = 10.0, 
+initialVelocity = 10.0,  
 time = 5.0,  
 acceleration = 2.0  
 
@@ -83,14 +89,16 @@ Displacement = 75.0 m
 <br>
 
 **`2.2 double displacementUsingFinalVelocity(double initialVelocity, double finalVelocity, double acceleration)`** <br>
-Computes displacement based on initial velocity, final velocity, and acceleration 
+Computes displacement based on initial velocity, final velocity, and acceleration:
 
-Time Complexity:O(1)
+**s = (v² - u²) / 2a**  
+
+Time Complexity: O(1)
 
 ### Sample Input:
 
 initialVelocity = 5.0,  
-finalVelocity = 10.0  
+finalVelocity = 10.0,  
 acceleration = 2.0  
 
 ### Sample Output:
@@ -100,13 +108,15 @@ Displacement = 18.75 m
 
 ### 3. Acceleration Calculations
 **`3.1 double acceleration(double finalVelocity, double initialVelocity, double time)`**
-Computes acceleration using the formula
+Computes acceleration using the formula:
 
-Time Complexity:O(1)
+**a = (v - u) / t**  
+
+Time Complexity: O(1)
 
 ### Sample Input:
-finalVelocity = 30.0, 
-initialVelocity = 10.0, 
+finalVelocity = 30.0,  
+initialVelocity = 10.0,  
 time = 4.0  
 
 ### Sample Output:
@@ -115,32 +125,35 @@ Acceleration = 5.0 m/s²
 <br>
 
 **`3.2 double accelerationUsingDisplacement(double displacement, double initialVelocity, double time)`**
-Computes acceleration using displacement instead of final velocity
+Computes acceleration using displacement instead of final velocity:
 
-Time Complexity:O(1)
+**a = (2(s - ut)) / t²**  
+
+Time Complexity: O(1)
 
 ### Sample Input:
 
 displacement = 50.0,  
-initialVelocity = 5.0, 
+initialVelocity = 5.0,  
 time = 10.0  
 
 ### Sample Output:
 
-Acceleration = 0.5 m/s² 
+Acceleration = 0.5 m/s²  
 <br>
 
 ### 4. Time Calculation
 **`4.1 double time(double initialVelocity, double finalVelocity, double acceleration)`**
-
 Computes the time taken for an object to reach a final velocity under constant acceleration:
 
-Time Complexity:O(1)
+**t = (v - u) / a**  
+
+Time Complexity: O(1)
 
 ### Sample Input:
 
-initialVelocity = 0.0, 
-finalVelocity = 20.0, 
+initialVelocity = 0.0,  
+finalVelocity = 20.0,  
 acceleration = 4.0  
 
 ### Sample Output:
@@ -150,10 +163,11 @@ Time = 5.0 s
 
 ### 5. Average Velocity Calculation
 **`5.1 double averageVelocity(double initialVelocity, double finalVelocity)`**
-
 Computes the average velocity over the motion duration using:
 
-Time Complexity:O(1)
+**v_avg = (u + v) / 2**  
+
+Time Complexity: O(1)
 
 ### Sample Input:
 initialVelocity = 10.0,  
@@ -161,26 +175,28 @@ finalVelocity = 20.0,
 
 ### Sample Output:
 
-Average Velocity = 15.0 m/s 
+Average Velocity = 15.0 m/s  
 <br>
 
 ### 6. Rotational Velocity Calculation
 **`6.1 double rotationalVelocity(double angularVelocity, double time, double angularAcceleration)`**
+Computes rotational velocity using the equation:
 
-Computes rotational velocity using the equation
+**ω = ω₀ + αt**  
 
-Time Complexity:O(1)
+Time Complexity: O(1)
 
 ### Sample Input:
 
-angularVelocity = 5.0, 
-time = 3.0, 
+angularVelocity = 5.0,  
+time = 3.0,  
 angularAcceleration = 2.0  
 
 ### Sample Output:
 
 Rotational Velocity = 11.0 rad/s  
 <br>
+
 
 ## Vector Calculations Module  
 
