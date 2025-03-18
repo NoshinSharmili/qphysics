@@ -132,4 +132,67 @@ public class Simulation {
     }
 
 
+
+     /**
+     * Simulates projectile motion of an object launched at an angle
+     *
+     * @param initialVelocity Initial velocity magnitude in meters per second (m/s)
+     * @param angleDegrees    Launch angle in degrees (°) from the horizontal
+     */
+    public static void simulateProjectileMotion(double initialVelocity, double angleDegrees) {
+        double gravity = Constants.ACCELERATION_DUE_TO_GRAVITY; // Acceleration due to gravity in m/s²
+        double angleRadians = Math.toRadians(angleDegrees); // Convert angle from degrees to radians
+
+        // Calculate initial velocity components using trigonometry
+        double vx = initialVelocity * Math.cos(angleRadians); // Horizontal velocity component in m/s (constant)
+        double vy = initialVelocity * Math.sin(angleRadians); // Initial vertical velocity component in m/s
+
+        // Calculate total flight time using kinematic equation for vertical motion
+        // When projectile hits ground: 0 = vy*t - (1/2)gt²
+        // For projectile starting at ground level, this simplifies to t = 2*vy/g
+        double totalTime = (2 * vy) / gravity; // Total flight time in seconds (s)
+
+        // Calculate maximum height using kinematic equation: h_max = vy²/(2g)
+        double maxHeight = (vy * vy) / (2 * gravity); // Maximum height in meters (m)
+
+        // Calculate range using horizontal distance formula: R = vx * total_time
+        double range = vx * totalTime; // Range in meters (m)
+
+        System.out.println("│ Projectile Motion Simulation │");
+        System.out.println("├─────────┬─────────┬─────────┬─────────┤");
+        System.out.println("│ Time(s) │   X(m)  │   Y(m)  │ Speed(m/s) │");
+        System.out.println("├─────────┼─────────┼─────────┼─────────┤");
+
+        // Simulate at regular intervals
+        int steps = 20; // Number of simulation steps
+        double timeStep = totalTime / steps; // Time interval between steps in seconds (s)
+
+        for (int i = 0; i <= steps; i++) {
+            double time = i * timeStep; // Current time in seconds (s)
+
+            // Horizontal position: x = vx * t
+            double x = vx * time; // Horizontal position in meters (m)
+
+            // Vertical position: y = vy*t - (1/2)gt²
+            double y = vy * time - 0.5 * gravity * time * time; // Vertical position in meters (m)
+
+            // Current vertical velocity: vy_current = vy - g*t
+            double vyCurrent = vy - gravity * time; // Current vertical velocity in m/s
+
+            // Calculate instantaneous speed using Pythagorean theorem: v = √(vx² + vy²)
+            double speed = Math.sqrt(vx * vx + vyCurrent * vyCurrent); // Speed in m/s
+
+            if (y < 0) y = 0;  // Don't show negative heights (after hitting ground)
+
+            System.out.printf("│ %7.2f │ %7.2f │ %7.2f │ %7.2f │\n", time, x, y, speed);
+        }
+
+        System.out.println("└─────────┴─────────┴─────────┴─────────┘");
+        System.out.printf("Maximum Height: %.2f meters\n", maxHeight);
+        System.out.printf("Range: %.2f meters\n", range);
+        System.out.printf("Total Flight Time: %.2f seconds\n\n", totalTime);
+    }
+
+
+
 }
