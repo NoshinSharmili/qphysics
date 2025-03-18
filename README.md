@@ -1275,7 +1275,7 @@ initialVelocity = 20.0 m/s
 `Total Time: 4.08 seconds`
 ### 2. Simple Pendulum Simulation
 
-### 2.1 void simulatePendulum(double length, double initialAngleDegrees, double simulationTime) <br>
+**`2.1 void simulatePendulum(double length, double initialAngleDegrees, double simulationTime)`**
 
 Simulates a simple pendulum’s motion using small-angle approximation and displays 
 
@@ -1312,7 +1312,7 @@ Time (s) | Angle (deg) | Angular Velocity (rad/s)
 
 ### 3. Collision Simulation
 
-### 3.1 void simulateCollision(double mass1, double velocity1, double mass2, double velocity2, boolean elastic) <br>
+**`3.1 void simulateCollision(double mass1, double velocity1, double mass2, double velocity2, boolean elastic)`**
 
 Simulates a collision between two objects and calculates final velocities, momentum, and energy.
 
@@ -1363,7 +1363,9 @@ Kinetic energy conserved
 <br>
 
 ### 4. Projectile Motion Simulation
-### 4.1 void simulateProjectileMotion(double initialVelocity, double angleDegrees) <br>
+
+**`4.1 void simulateProjectileMotion(double initialVelocity, double angleDegrees)`**
+
 Simulates projectile motion of an object launched at an angle, displaying time vs. position and velocity.
 
 Formula Used:
@@ -1410,7 +1412,8 @@ Total Flight Time: 3.57 seconds
 <br>
 ### 5. Force & Acceleration Simulation
 
-### 5.1 void simulateForceAndAcceleration(double mass, double force) <br>
+**`5.1 void simulateForceAndAcceleration(double mass, double force)`** <br>
+
 Simulates an object's motion under a constant force, showing time vs. velocity, displacement, and kinetic energy.
 
 Formula Used:
