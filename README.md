@@ -1089,3 +1089,274 @@ pounds = 50.0
 Kilograms = 22.68 kg
 <br>
 
+## Projectile Motion Module
+
+### 1. Time of Flight
+**`1.1 double timeOfFlight(double velocity, double angle)`**
+
+Calculates the total time the projectile remains in the air using the formula:
+
+𝑇=2𝑉0sin⁡(𝜃)/g
+​where:
+V0 is the initial velocity (m/s) <br>
+θ is the launch angle (degrees)<br>
+g is the acceleration due to gravity (9.8 m/s²)<br>
+Time Complexity: O(1)<br>
+
+### Sample Input:
+velocity = 20.0 m/s, angle = 45.0°
+
+### Sample Output:
+Time of Flight = 2.87 s
+<br>
+
+2. Maximum Height
+2.1 double maxHeight(double velocity, double angle)
+Calculates the peak height reached by the projectile using the formula:
+
+𝐻
+=
+𝑉
+0
+2
+sin
+⁡
+2
+(
+𝜃
+)
+2
+𝑔
+H= 
+2g
+V 
+0
+2
+​
+ sin 
+2
+ (θ)
+​
+ 
+where:
+
+𝑉
+0
+V 
+0
+​
+  is the initial velocity (m/s)
+𝜃
+θ is the launch angle (degrees)
+𝑔
+g is the acceleration due to gravity (9.8 m/s²)
+Time Complexity: O(1)
+
+Sample Input:
+velocity = 30.0 m/s, angle = 60.0°
+
+Sample Output:
+Maximum Height = 34.39 m
+<br>
+
+3. Total Range
+3.1 double totalRange(double velocity, double angle)
+Calculates the horizontal distance traveled by the projectile using the formula:
+
+𝑅
+=
+𝑉
+0
+2
+sin
+⁡
+(
+2
+𝜃
+)
+𝑔
+R= 
+g
+V 
+0
+2
+​
+ sin(2θ)
+​
+ 
+where:
+
+𝑉
+0
+V 
+0
+​
+  is the initial velocity (m/s)
+𝜃
+θ is the launch angle (degrees)
+𝑔
+g is the acceleration due to gravity (9.8 m/s²)
+Time Complexity: O(1)
+
+Sample Input:
+velocity = 25.0 m/s, angle = 30.0°
+
+Sample Output:
+Total Range = 55.06 m
+<br>
+
+4. Velocity at a Given Time
+4.1 double velocityAtTime(double velocity, double angle, double time)
+Calculates the projectile's velocity at a given time using the formulas:
+
+𝑉
+𝑥
+=
+𝑉
+0
+cos
+⁡
+(
+𝜃
+)
+V 
+x
+​
+ =V 
+0
+​
+ cos(θ)
+𝑉
+𝑦
+=
+𝑉
+0
+sin
+⁡
+(
+𝜃
+)
+−
+𝑔
+⋅
+𝑡
+V 
+y
+​
+ =V 
+0
+​
+ sin(θ)−g⋅t
+𝑉
+=
+𝑉
+𝑥
+2
++
+𝑉
+𝑦
+2
+V= 
+V 
+x
+2
+​
+ +V 
+y
+2
+​
+ 
+​
+ 
+where:
+
+𝑉
+0
+V 
+0
+​
+  is the initial velocity (m/s)
+𝜃
+θ is the launch angle (degrees)
+𝑔
+g is the acceleration due to gravity (9.8 m/s²)
+𝑡
+t is the elapsed time (s)
+Time Complexity: O(1)
+
+Sample Input:
+velocity = 40.0 m/s, angle = 45.0°, time = 2.0 s
+
+Sample Output:
+Velocity at Time t = 34.18 m/s
+<br>
+
+5. Position at a Given Time
+5.1 double[] positionAtTime(double velocity, double angle, double time)
+Calculates the x (horizontal) and y (vertical) positions at a given time using the formulas:
+
+𝑋
+=
+𝑉
+0
+cos
+⁡
+(
+𝜃
+)
+⋅
+𝑡
+X=V 
+0
+​
+ cos(θ)⋅t
+𝑌
+=
+𝑉
+0
+sin
+⁡
+(
+𝜃
+)
+⋅
+𝑡
+−
+1
+2
+𝑔
+𝑡
+2
+Y=V 
+0
+​
+ sin(θ)⋅t− 
+2
+1
+​
+ gt 
+2
+ 
+where:
+
+𝑉
+0
+V 
+0
+​
+  is the initial velocity (m/s)
+𝜃
+θ is the launch angle (degrees)
+𝑔
+g is the acceleration due to gravity (9.8 m/s²)
+𝑡
+t is the elapsed time (s)
+Time Complexity: O(1)
+
+Sample Input:
+velocity = 50.0 m/s, angle = 30.0°, time = 3.0 s
+
+Sample Output:
+Position at Time t = (X: 129.9 m, Y: 30.3 m)
+<br>
+
