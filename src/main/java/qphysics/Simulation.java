@@ -67,4 +67,69 @@ public class Simulation {
         }
     }
 
+
+     /**
+     * Simulates collision between two objects.
+     *
+     * @param mass1     Mass of first object (kg)
+     * @param velocity1 Initial velocity of first object (m/s)
+     * @param mass2     Mass of second object (kg)
+     * @param velocity2 Initial velocity of second object (m/s)
+     * @param elastic   True for elastic collision, false for inelastic
+     */
+    public static void simulateCollision(double mass1, double velocity1, double mass2, double velocity2, boolean elastic) {
+        // Print simulation header with initial conditions
+        System.out.println("Collision Simulation");
+        System.out.println("===================");
+        System.out.println("Before collision:");
+        System.out.printf("Object 1: mass = %.2f kg, velocity = %.2f m/s\n", mass1, velocity1);
+        System.out.printf("Object 2: mass = %.2f kg, velocity = %.2f m/s\n", mass2, velocity2);
+
+        // Calculate initial momentum: p = mv (kg·m/s)
+        double momentumBefore = mass1 * velocity1 + mass2 * velocity2;
+
+        // Calculate initial kinetic energy: KE = ½mv² (J)
+        double keBefore = 0.5 * mass1 * velocity1 * velocity1 + 0.5 * mass2 * velocity2 * velocity2;
+
+        // Print initial momentum and energy
+        System.out.printf("Total momentum before: %.2f kg·m/s\n", momentumBefore);
+        System.out.printf("Total kinetic energy before: %.2f J\n", keBefore);
+
+        // Calculate final velocities
+        double v1Final, v2Final;
+
+        if (elastic) {
+            // Elastic collision formulas (derived from conservation of momentum and energy)
+            // v1' = ((m1-m2)v1 + 2m2v2)/(m1+m2)
+            v1Final = ((mass1 - mass2) * velocity1 + 2 * mass2 * velocity2) / (mass1 + mass2);
+
+            // v2' = ((m2-m1)v2 + 2m1v1)/(m1+m2)
+            v2Final = ((mass2 - mass1) * velocity2 + 2 * mass1 * velocity1) / (mass1 + mass2);
+        } else {
+            // Inelastic collision (objects stick together)
+            // v' = (m1v1 + m2v2)/(m1+m2)
+            v1Final = v2Final = (mass1 * velocity1 + mass2 * velocity2) / (mass1 + mass2);
+        }
+
+        // Print final velocities
+        System.out.println("\nAfter collision:");
+        System.out.printf("Object 1: velocity = %.2f m/s\n", v1Final);
+        System.out.printf("Object 2: velocity = %.2f m/s\n", v2Final);
+
+        // Calculate final momentum (kg·m/s)
+        double momentumAfter = mass1 * v1Final + mass2 * v2Final;
+
+        // Calculate final kinetic energy (J)
+        double keAfter = 0.5 * mass1 * v1Final * v1Final + 0.5 * mass2 * v2Final * v2Final;
+
+        // Print final momentum and energy
+        System.out.printf("Total momentum after: %.2f kg·m/s\n", momentumAfter);
+        System.out.printf("Total kinetic energy after: %.2f J\n", keAfter);
+
+        // Report on energy conservation
+        System.out.printf("Kinetic energy %s\n",
+                elastic ? "conserved" : "lost: " + (keBefore - keAfter) + " J");
+    }
+
+
 }
