@@ -32,6 +32,7 @@ Department of Computer Science and Engineering
 - [Physics Constants Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#physics-constants-module)
 - [Conversion Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#conversion-module)
 - [Projectile Motion Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#projectile-motion-module)
+- [Simulation Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#simulation-module)
 
 ## Tools
 **Language** : Java
