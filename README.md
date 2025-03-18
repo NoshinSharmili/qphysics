@@ -468,6 +468,7 @@ forces = {10.0, -5.0, 15.0, -10.0}
 Net Force = 10.0 N  
 <br>  
 
+
 ## Energy Calculations Module 
 
 ### 1. Kinetic Energy  
@@ -617,7 +618,9 @@ potentialEnergy = 200.0 J
 Mechanical Energy = 300.0 J  
 <br>  
 
+
 ## Physics Constants Module
+
 ### 1.Universal Constants
 
 ### 1.1 Gravitational Constant
@@ -728,7 +731,9 @@ Defines the Stefan-Boltzmann constant, used in blackbody radiation calculations:
 
 σ = 5.670374419 × 10⁻⁸ W⋅m⁻²⋅K⁻⁴
 
+
 ## Conversion Module
+
 ### 1. Length Conversions
 **`1.1 double metersToKilometers(double meters)`**
 Converts length from meters to kilometers using the formula:
