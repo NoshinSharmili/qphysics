@@ -23,6 +23,8 @@ Department of Computer Science and Engineering
 
 ## Features
 
+ > Click on the links to see documentation
+
 - [Motion Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#motion-calculations-module)
 - [Vector Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#vector-calculations-module)
 - [Force Calculations Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#force-calculations-module)
@@ -30,6 +32,12 @@ Department of Computer Science and Engineering
 - [Physics Constants Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#physics-constants-module)
 - [Conversion Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#conversion-module)
 - [Projectile Motion Module](https://github.com/NoshinSharmili/qphysics?tab=readme-ov-file#projectile-motion-module)
+
+## Tools
+**Language** : Java
+**IDE** : IntelliJ Idea
+**Version Control** : Git
+**Documentation** : Readme
 
 ## Motion Calculations Module
 
