@@ -1255,10 +1255,10 @@ Displacement at time t: s = ut - (1/2)gt²
 
 Time Complexity: O(n) (where n is total time steps)
 
-Sample Input:
+### Sample Input:
 initialVelocity = 20.0 m/s
 
-Sample Output:
+### Sample Output:
 
 `Time (s) | Distance (m)`
 
@@ -1273,5 +1273,181 @@ Sample Output:
         4 |        0.00
 
 `Total Time: 4.08 seconds`
-***
+### 2. Simple Pendulum Simulation
+
+### 2.1 void simulatePendulum(double length, double initialAngleDegrees, double simulationTime) <br>
+
+Simulates a simple pendulum’s motion using small-angle approximation and displays 
+
+time vs. angular displacement and velocity.
+
+Formula Used:
+
+Period: T = 2π√(L/g)
+
+Angular displacement: θ(t) = θ₀cos(√(g/L) * t)
+
+Angular velocity: ω(t) = -θ₀√(g/L)sin(√(g/L) * t)
+
+Time Complexity: O(n) (where n depends on simulation time steps)
+
+### Sample Input:
+
+length = 2.0 m, initialAngleDegrees = 15.0°, simulationTime = 5.0 s
+
+### Sample Output:
+
+Length: 2.00 m
+
+Initial angle: 15.00 degrees
+
+Period: 2.84 seconds
+
+Time (s) | Angle (deg) | Angular Velocity (rad/s)
+
+    0.00 |       15.00 |                0.00
+    0.25 |       14.80 |               -0.53
+    0.50 |       14.22 |               -1.04
+<br>
+
+### 3. Collision Simulation
+
+### 3.1 void simulateCollision(double mass1, double velocity1, double mass2, double velocity2, boolean elastic) <br>
+
+Simulates a collision between two objects and calculates final velocities, momentum, and energy.
+
+Formula Used:
+
+Elastic:
+
+v₁' = ((m₁ - m₂)v₁ + 2m₂v₂) / (m₁ + m₂)
+
+v₂' = ((m₂ - m₁)v₂ + 2m₁v₁) / (m₁ + m₂)
+
+Inelastic:
+
+v' = (m₁v₁ + m₂v₂) / (m₁ + m₂)
+
+Time Complexity: O(1)
+
+### Sample Input:
+
+mass1 = 2.0 kg, velocity1 = 3.0 m/s, mass2 = 3.0 kg, velocity2 = -2.0 m/s, elastic = true
+
+### Sample Output:
+
+Collision Simulation
+
+Before collision:
+
+Object 1: mass = 2.00 kg, velocity = 3.00 m/s
+
+Object 2: mass = 3.00 kg, velocity = -2.00 m/s
+
+Total momentum before: 0.00 kg·m/s
+
+Total kinetic energy before: 10.50 J
+
+
+After collision:
+
+Object 1: velocity = -3.40 m/s
+
+Object 2: velocity = 1.60 m/s
+
+Total momentum after: 0.00 kg·m/s
+
+Total kinetic energy after: 10.50 J
+
+Kinetic energy conserved
+<br>
+
+### 4. Projectile Motion Simulation
+### 4.1 void simulateProjectileMotion(double initialVelocity, double angleDegrees) <br>
+Simulates projectile motion of an object launched at an angle, displaying time vs. position and velocity.
+
+Formula Used:
+
+Total flight time: T = (2v₀ sinθ) / g
+
+Max height: h_max = (v₀² sin²θ) / (2g)
+
+Range: R = (v₀² sin 2θ) / g
+
+x = v₀ cosθ * t, y = v₀ sinθ * t - (1/2)gt²
+
+Time Complexity: O(n) (where n is the number of time steps)
+
+Sample Input:
+
+initialVelocity = 25.0 m/s, angleDegrees = 45.0°
+
+Sample Output:
+```
+│ Projectile Motion Simulation │<br>
+├─────────┬─────────┬─────────┬─────────┤
+│ Time(s) │   X(m)  │   Y(m)  │  Speed  │
+|         |         |         |  (m/s)  |
+├─────────┼─────────┼─────────┼─────────┤
+│    0.00 │    0.00 │    0.00 │   25.00 │
+│    0.50 │    8.84 │    6.44 │   20.21 │
+│    1.00 │   17.68 │    9.84 │   16.84 │
+│    1.50 │   26.52 │   10.21 │   15.02 │
+│    2.00 │   35.36 │    7.54 │   14.66 │
+│    2.50 │   44.20 │    1.84 │   15.76 │
+└─────────┴─────────┴─────────┴─────────┘
+```
+Maximum Height: 15.93 meters
+Range: 63.72 meters
+Total Flight Time: 3.57 seconds
+
+
+Maximum Height: 15.93 meters
+
+Range: 63.72 meters
+
+Total Flight Time: 3.57 seconds
+<br>
+### 5. Force & Acceleration Simulation
+
+### 5.1 void simulateForceAndAcceleration(double mass, double force) <br>
+Simulates an object's motion under a constant force, showing time vs. velocity, displacement, and kinetic energy.
+
+Formula Used:
+
+Acceleration: a = F/m
+
+Velocity: v = at
+
+Displacement: d = (1/2)at²
+
+Kinetic Energy: KE = (1/2)mv²
+
+Time Complexity: O(n) (where n is the number of simulation steps)
+
+Sample Input:
+
+mass = 5.0 kg, force = 10.0 N
+
+Sample Output:
+```
+│ Force and Acceleration Simulation │
+├─────────┬─────────┬─────────┬─────────┤
+│ Time(s) │ Vel(m/s)│ Dist(m) │ KE(J)   │
+├─────────┼─────────┼─────────┼─────────┤
+│       0 │    0.00 │    0.00 │    0.00 │
+│       1 │    2.00 │    1.00 │   10.00 │
+│       2 │    4.00 │    4.00 │   40.00 │
+│       3 │    6.00 │    9.00 │   90.00 │
+│       4 │    8.00 │   16.00 │  160.00 │
+└─────────┴─────────┴─────────┴─────────┘
+```
+Mass: 5.00 kg
+
+Force: 10.00 N
+
+Acceleration: 2.00 m/s²
+<br>
+
+
         
