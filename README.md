@@ -1183,89 +1183,36 @@ Sample Output:
 Total Range = 55.06 m
 <br>
 
-4. Velocity at a Given Time
-4.1 double velocityAtTime(double velocity, double angle, double time)
+### 4. Velocity at a Given Time
+
+**`4.1 double velocityAtTime(double velocity, double angle, double time)`**
+
 Calculates the projectile's velocity at a given time using the formulas:
 
-𝑉
-𝑥
-=
-𝑉
-0
-cos
-⁡
-(
-𝜃
-)
-V 
-x
-​
- =V 
-0
-​
- cos(θ)
-𝑉
-𝑦
-=
-𝑉
-0
-sin
-⁡
-(
-𝜃
-)
-−
-𝑔
-⋅
-𝑡
-V 
-y
-​
- =V 
-0
-​
- sin(θ)−g⋅t
-𝑉
-=
-𝑉
-𝑥
-2
-+
-𝑉
-𝑦
-2
-V= 
-V 
-x
-2
-​
- +V 
-y
-2
-​
- 
-​
- 
+
+Vx = V0 cos(θ)
+
+Vy = V0 sin(θ)−g⋅t
+
+V = √(Vx^2 + Vy^2)
+
+
 where:
 
-𝑉
-0
-V 
-0
-​
-  is the initial velocity (m/s)
-𝜃
+V0 is the initial velocity (m/s)
+
 θ is the launch angle (degrees)
-𝑔
+
 g is the acceleration due to gravity (9.8 m/s²)
-𝑡
+
 t is the elapsed time (s)
+
 Time Complexity: O(1)
 
-Sample Input:
+### Sample Input:
 velocity = 40.0 m/s, angle = 45.0°, time = 2.0 s
 
-Sample Output:
+### Sample Output:
 Velocity at Time t = 34.18 m/s
 <br>
 
@@ -1276,6 +1223,7 @@ Velocity at Time t = 34.18 m/s
 Calculates the x (horizontal) and y (vertical) positions at a given time using the formulas:
 
 X= V0 cos(θ)⋅t
+
 Y= V0 sin(θ)⋅t− 1/2 gt^2
  
 where:
