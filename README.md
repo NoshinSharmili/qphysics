@@ -3,7 +3,7 @@
 
 Version: 1.0
 
-qphysics is a modular and comprehensive Java-based physics library designed for software applications requiring accurate and efficient physics computations. It provides tools for motion calculations, vector operations, force computations, energy transformations,projectile motion calculations, constants and unit conversions. The library is optimized for scientific research, game development, robotics, and educational purposes.
+qphysics is a modular and comprehensive Java-based physics library designed for software applications requiring accurate and efficient physics computations. It provides tools for motion calculations, vector operations, force computations, energy transformations, projectile motion calculations, constants and unit conversions. The library is optimized for scientific research, game development, robotics, and educational purposes.
 
 
 ## Team Description
