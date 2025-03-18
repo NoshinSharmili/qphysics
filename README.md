@@ -493,9 +493,8 @@ Net Force = 10.0 N
 
 **`1.1 double kineticEnergy(double mass, double velocity)`** <br>  
 Calculates kinetic energy using the formula:  
-\[
-KE = \frac{1}{2} m v^2
-\]  
+
+KE = (1/2) mv²  
 
 Time Complexity: O(1)  
 
@@ -511,9 +510,8 @@ Kinetic Energy = 9.0 J
 
 **`2.1 double potentialEnergy(double mass, double height, double gravity)`** <br>  
 Computes gravitational potential energy using the formula:  
-\[
-PE = mgh
-\]  
+
+PE = mgh  
 
 Time Complexity: O(1)  
 
@@ -530,9 +528,8 @@ Potential Energy = 490.5 J
 
 **`3.1 double gravitationalPotentialEnergy(double mass1, double mass2, double distance)`** <br>  
 Computes gravitational potential energy using the universal gravitation formula:  
-\[
-U = - \frac{G m_1 m_2}{r}
-\]  
+
+ U = − (G m₁ m₂) / r 
 
 Time Complexity: O(1)  
 
@@ -549,9 +546,8 @@ Gravitational Potential Energy ≈ -4.1e28 J
 
 **`4.1 double elasticPotentialEnergy(double springConstant, double displacement)`** <br>  
 Computes elastic potential energy using Hooke’s law:  
-\[
-U = \frac{1}{2} k x^2
-\]  
+
+U = (1/2) kx²  
 
 Time Complexity: O(1)  
 
@@ -567,9 +563,8 @@ Elastic Potential Energy = 1.0 J
 
 **`5.1 double workDone(double force, double displacement, double angle)`** <br>  
 Computes work done using the equation:  
-\[
-W = F d \cos(\theta)
-\]  
+
+W = Fd cos(θ)
 
 Time Complexity: O(1)  
 
@@ -586,9 +581,8 @@ Work Done ≈ 43.3 J
 
 **`6.1 double power(double workDone, double time)`** <br>  
 Computes power using the equation:  
-\[
-P = \frac{W}{t}
-\]  
+
+P = W / t  
 
 Time Complexity: O(1)  
 
@@ -604,9 +598,8 @@ Power = 20.0 W
 
 **`7.1 double powerUsingForce(double force, double velocity)`** <br>  
 Computes power using force and velocity:  
-\[
-P = F v
-\]  
+
+P = Fv 
 
 Time Complexity: O(1)  
 
@@ -622,9 +615,8 @@ Power = 100.0 W
 
 **`8.1 double mechanicalEnergy(double kineticEnergy, double potentialEnergy)`** <br>  
 Computes total mechanical energy as:  
-\[
+
 E = KE + PE
-\]  
 
 Time Complexity: O(1)  
 
@@ -1114,11 +1106,11 @@ Kilograms = 22.68 kg
 
 Calculates the total time the projectile remains in the air using the formula:
 
-𝑇=2𝑉0sin⁡(𝜃)/g
+T = (2V₀ sin(θ)) / g
 
 ​where:
 
-V0 is the initial velocity (m/s) <br>
+V₀ is the initial velocity (m/s) <br>
 θ is the launch angle (degrees)<br>
 g is the acceleration due to gravity (9.8 m/s²)<br>
 Time Complexity: O(1)<br>
@@ -1135,11 +1127,11 @@ Time of Flight = 2.87 s
 
 Calculates the peak height reached by the projectile using the formula:
 
-H = V0^2​.sin^2(θ)/​2g
+H = (V₀² sin²(θ)) / (2g) 
  
 where:
 
-V0 is the initial velocity (m/s)
+V₀ is the initial velocity (m/s)
 
 θ is the launch angle (degrees)
 
@@ -1162,11 +1154,11 @@ Maximum Height = 34.39 m
 
 Calculates the horizontal distance traveled by the projectile using the formula:
 
-R= V0^2​.sin(2θ)​/g
+R = (V₀² sin(2θ)) / g 
 
 where:
 
-V0 is the initial velocity (m/s)
+V₀ is the initial velocity (m/s)
 
 θ is the launch angle (degrees)
 
@@ -1189,16 +1181,16 @@ Total Range = 55.06 m <br>
 Calculates the projectile's velocity at a given time using the formulas:
 
 
-Vx = V0 cos(θ)
+Vₓ = V₀ cos(θ)  
 
-Vy = V0 sin(θ)−g⋅t
+Vᵧ = V₀ sin(θ) − g ⋅ t  
 
-V = √(Vx^2 + Vy^2)
+V = √(Vₓ² + Vᵧ²)  
 
 
 where:
 
-V0 is the initial velocity (m/s)
+V₀ is the initial velocity (m/s)
 
 θ is the launch angle (degrees)
 
@@ -1221,13 +1213,13 @@ Velocity at Time t = 34.18 m/s
 
 Calculates the x (horizontal) and y (vertical) positions at a given time using the formulas:
 
-X= V0 cos(θ)⋅t
+X = V₀ cos(θ) ⋅ t  
 
-Y= V0 sin(θ)⋅t− 1/2 gt^2
+Y = V₀ sin(θ) ⋅ t − (1/2) g t² 
  
 where:
 
-V0 is the initial velocity (m/s)
+V₀ is the initial velocity (m/s)
 
 θ is the launch angle (degrees)
 
@@ -1246,3 +1238,39 @@ velocity = 50.0 m/s, angle = 30.0°, time = 3.0 s
 Position at Time t = (X: 129.9 m, Y: 30.3 m)
 <br>
 ***
+
+## Simulation Module
+
+### 1. Ball Throw Simulation
+**`1.1 void simulateBallThrow(double initialVelocity)`** <br>
+
+Simulates the vertical motion of a ball thrown upwards under gravity and displays time vs. displacement.
+
+Formula Used:
+
+Total time in air: T = (2u) / g
+
+Displacement at time t: s = ut - (1/2)gt²
+
+Time Complexity: O(n) (where n is total time steps)
+
+Sample Input:
+initialVelocity = 20.0 m/s
+
+Sample Output:
+
+`Time (s) | Distance (m)`
+
+        0 |        0.00
+        
+        1 |       15.10
+        
+        2 |       20.20
+        
+        3 |       15.30
+        
+        4 |        0.00
+
+`Total Time: 4.08 seconds`
+***
+        
