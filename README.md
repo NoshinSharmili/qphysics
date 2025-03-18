@@ -691,7 +691,7 @@ g = 9.8065 m/s^2 <br>
 
 Defines the mass of the Earth:
 
-ME = 5.92e24 kg <br>
+Mₑ = 5.92e24 kg <br>
 
 ### 2.3 Earth Radius
 
@@ -699,7 +699,7 @@ ME = 5.92e24 kg <br>
 
 Represents the mean radius of the Earth:
 
-RE = 6.371e6 m <br>
+Rₑ = 6.371e6 m <br>
 
 ### 3. Electromagnetic Constants
 
@@ -709,6 +709,7 @@ RE = 6.371e6 m <br>
 
 Represents the permittivity of free space (vacuum permittivity):
 
+ε₀ = 8.854187817 × 10⁻¹² F/m
 
 ### 3.2 Permeability of Free Space
 
@@ -716,6 +717,7 @@ Represents the permittivity of free space (vacuum permittivity):
 
 Defines the permeability of free space (vacuum permeability):
 
+μ₀ = 4π × 10⁻⁷ N/A²
 
 
 ### 3.3 Stefan-Boltzmann Constant
@@ -723,4 +725,6 @@ Defines the permeability of free space (vacuum permeability):
 **`public static final double STEFAN_BOLTZMANN_CONSTANT`**
 
 Defines the Stefan-Boltzmann constant, used in blackbody radiation calculations:
+
+σ = 5.670374419 × 10⁻⁸ W⋅m⁻²⋅K⁻⁴
 
