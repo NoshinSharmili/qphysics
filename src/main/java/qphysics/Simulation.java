@@ -195,4 +195,48 @@ public class Simulation {
 
 
 
+
+
+    
+    /**
+     * Simulates the effect of a constant force applied to an object
+     *
+     * @param mass  Mass of the object in kilograms (kg)
+     * @param force Constant force applied to the object in Newtons (N)
+     */
+    public static void simulateForceAndAcceleration(double mass, double force) {
+        // Calculate acceleration using Newton's Second Law: F = ma → a = F/m
+        double acceleration = force / mass; // Acceleration in meters per second squared (m/s²)
+
+        System.out.println("│ Force and Acceleration Simulation │");
+        System.out.println("├─────────┬─────────┬─────────┬─────────┤");
+        System.out.println("│ Time(s) │ Vel(m/s)│ Dist(m) │ KE(J)   │");
+        System.out.println("├─────────┼─────────┼─────────┼─────────┤");
+
+        // Simulate for 10 seconds
+        for (int time = 0; time <= 10; time++) {
+            // Calculate velocity using v = a*t (constant acceleration)
+            double velocity = acceleration * time; // Velocity in meters per second (m/s)
+
+            // Calculate distance using d = (1/2)at² (starting from rest)
+            double distance = 0.5 * acceleration * time * time; // Distance in meters (m)
+
+            // Calculate kinetic energy using KE = (1/2)mv²
+            double kineticEnergy = 0.5 * mass * velocity * velocity; // Kinetic energy in Joules (J)
+
+            System.out.printf("│ %7d │ %7.2f │ %7.2f │ %7.2f │\n", time, velocity, distance, kineticEnergy);
+        }
+
+        System.out.println("└─────────┴─────────┴─────────┴─────────┘");
+        System.out.printf("Mass: %.2f kg\n", mass);
+        System.out.printf("Force: %.2f N\n", force);
+        System.out.printf("Acceleration: %.2f m/s²\n\n", acceleration);
+    }
+
+
+
+
+
+
+
 }
