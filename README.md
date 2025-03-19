@@ -21,6 +21,38 @@ Lecturer
 
 Department of Computer Science and Engineering
 
+## Installation
+
+- Clone the Repository
+
+First, clone the qPhysics repository to your local development environment:
+
+- Build the JAR File
+
+Navigate to the project directory in the terminal and run the following command to build the JAR file:
+
+`mvn clean package`
+
+This will generate a JAR file, typically located in the target/ directory, named qphysics-1.0-SNAPSHOT.jar.
+
+- Add the JAR File to Your Project
+
+To use qPhysics in another Java project, follow these steps:
+
+**In IntelliJ IDEA:**
+
+1. Open your project.
+
+2. Go to File > Project Structure.
+
+3. Navigate to Libraries.
+
+4. Click the + button and select Java.
+
+5. Locate and select qphysics-1.0-SNAPSHOT.jar from the target/ folder of the cloned repository.
+
+6. Click OK and apply the changes.
+
 ## Features
 
  > Click on the links to see documentation
